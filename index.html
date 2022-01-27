@@ -7,19 +7,32 @@
   <title>포트폴리오 묶음(가제)</title>
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font.css">
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="JS/contactButton.js"></script>
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li></li>
+        <li>
+          <img src="img/icon_home.png" alt="home" width="25">
+        </li>
+        <li>
+          <img src="img/icon_work.png" alt="wort" width="25">
+        </li>
+        <li>
+          <img src="img/icon_experience.png" alt="experience" width="25">
+        </li>
       </ul>
     </nav>
   </header>
 
   <div id="top">
+    <div class="contentBox">
     <div id="profileBox">
       <div class="profile">
         <img src="img/icon_me.png" alt="me" class="me" width="108" height="108">
@@ -33,23 +46,46 @@
             <img src="img/icon_google.png" alt="google" width="30" height="30">
             <img src="img/icon_kakao.png" alt="kakao" width="30" height="30">
         </div>
-        <button type="button" class="contactMe">연락주세요!</button>
+        <div class="contact">
+          <button type="button" class="contactMe">Contact Me!</button>
+          <div class="contactMe_tootip">
+            <p>010-0000-0000</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="scorllDownBox">
       <div class="scrollDown"></div>
     </div>
   </div>
-
-  <div id="aboutMe">
-
   </div>
 
-  <div id="experience">
+  <div id="aboutMeBox">
+    <div class="contentBox">
+    <h1 class="aboutMe_text">About Me</h1>
+    <div class="aboutMe_Left">
+      <img src="img/icon_me.png" alt="me" class="mypic">
+    </div>
+    <div class="aboutMe_Right">
+      <div class="bubble">
+        <div class="bubbleLeft">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit.
+          </p>
+        </div>
+        <div class="bubbleRight">
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="experienceBox">
     
   </div>
 
-  <div id="work">
+  <div id="workBox">
     
   </div>
 </body>
