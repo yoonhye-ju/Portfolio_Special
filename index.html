@@ -12,6 +12,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="JS/contactButton.js"></script>
+  <script src="JS/animation.js"></script>
+  <script src="JS/scroll.js"></script>
 </head>
 
 <body>
@@ -33,36 +35,39 @@
 
   <div id="top">
     <div class="contentBox">
-    <div id="profileBox">
-      <div class="profile">
-        <img src="img/icon_me.png" alt="me" class="me" width="108" height="108">
-        <h1>Yoon, Hye-ju</h1>
-        <div class="profileText">
-          <span>I'm
-            <span class="profileText-ratate">UX/UI Designer Editorial Designer Graphic Designer</span>
-          </span>
-        </div>
-        <div class="emailBox">
-            <img src="img/icon_google.png" alt="google" width="30" height="30">
-            <img src="img/icon_kakao.png" alt="kakao" width="30" height="30">
-        </div>
-        <div class="contact">
-          <button type="button" class="contactMe">Contact Me!</button>
-          <div class="contactMe_tootip">
-            <p>010-0000-0000</p>
+      <div id="profileBox">
+        <div class="profile">
+          <img src="img/icon_me.png" alt="me" class="me" width="108" height="108">
+          <h1>Yoon, Hye-ju</h1>
+          <div class="profileText">
+            <span>I'm a</span>
+              <span class="job">UX/UI Designer</span>
+              <span class="job">Graphic Designer</span>
+              <span class="job">Web Designer</span>
+            </span>
+          </div>
+          <div class="emailBox">
+            <!-- <img src="img/icon_google.png" alt="google" width="30" height="30">
+            <img src="img/icon_kakao.png" alt="kakao" width="30" height="30"> -->
+          </div>
+          <div class="contact">
+            <button type="button" class="contactMe">Contact Me!</button>
+            <div class="contactMe_tootip">
+              <p>010-0000-0000</p>
+            </div>
+          </div>
+          <div id="scorllDownBox">
+            <p>Scroll Down</p>
+            <div class="scrollDown"></div>
           </div>
         </div>
       </div>
     </div>
-    <div id="scorllDownBox">
-      <div class="scrollDown"></div>
-    </div>
-  </div>
   </div>
 
   <div id="aboutMeBox">
     <div class="contentBox">
-    <h1 class="aboutMe_text">About Me</h1>
+    <h1 class="portfolio_text">About Me</h1>
     <div class="aboutMe_Left">
       <img src="img/icon_me.png" alt="me" class="mypic">
     </div>
@@ -74,7 +79,29 @@
           </p>
         </div>
         <div class="bubbleRight">
+          <div class="illustrationBox">
+            <h4 class="program">Illustration</h4>
+            <span class="meterbar">95%</span>
+            <div class="illustrationBar"></div>
+          </div>
 
+          <div class="photoshopBox">
+            <h4 class="program">Photoshop</h4>
+            <span class="meterbar">95%</span>
+            <div class="photoshopBar"></div>
+          </div>
+
+          <div class="indesignBox">
+            <h4 class="program">Indesign</h4>
+            <span class="meterbar">90%</span>
+            <div class="indesignBar"></div>
+          </div>
+
+          <div class="uxuiBox">
+            <h4 class="program">UX/UI</h4>
+            <span class="meterbar">85%</span>
+            <div class="uxuiBar"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -82,7 +109,16 @@
   </div>
 
   <div id="experienceBox">
-    
+    <div class="contentBox">
+      <h1 class="portfolio_text">Experience</h1>
+      <div class="experienceLeft">
+        <div class="leftSchrool">
+        </div>
+      </div>
+      <div class="experienceRight">
+        <div class="rightEx"></div>
+      </div>
+    </div>
   </div>
 
   <div id="workBox">

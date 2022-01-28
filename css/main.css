@@ -3,43 +3,78 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 li, ul, ol{list-style: none;}
 a{text-decoration: none;}
+body{font-family: 'Noto Sans KR', sans-serif;}
 .contentBox{width: 1200px; height: 100%; background-color: bisque; margin: 0 auto;}
+.portfolio_text{width: 100%; height: 150px; padding: 100px 0 0 100px;}
 
-header{width: 5%; height: 500vh; background-color: cadetblue; float: left; z-index: 3;}
+header{width: 100px; height: 100vh; background-color: cadetblue;  position: fixed;}
 
-#top{width: 100%; height: 937px; background-color: cornflowerblue; padding-top: 330px;}
-#profileBox{width: 100%; height: 430px; background-color: darkgray; margin: 0 auto;}
-.profile{width: 30%; height: 100%; background-color: darkolivegreen; display: flex; flex-direction: column; align-items: center; margin: 0 auto;}
+#top{width: calc(100% - 100px); height: 937px; float: right;}
+#profileBox{width: 100%; height: 100%; margin: 0 auto;}
+.profile{width: 30%; height: 100%; background-color: darkolivegreen; display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding-top: 330px;}
 .me{margin: 5%;}
-.profileText{width: 100%; height: 30px; background-color: beige; margin-top: 15px; padding-left: 25%;}
-.emailBox{width: 100%; height: 35px; background-color: chocolate; margin-top: 25px; padding-left: 25%;}
+.profileText{width: 100%; height: 30px; background-color: beige; margin-top: 15px; padding-left: 25%; text-align: center;}
 
+.job{width: 100%; height: 100%; background-color: aquamarine; animation-name: jobs; animation-duration: 0.3s infinite linear;}
+
+@keyframes jobs{to{transform: scale(0.9);}
+from{transform: scale(1.0);}}
+
+.emailBox{width: 100%; height: 35px; background-color: chocolate; margin-top: 25px; padding-left: 25%;}
 .contact{width: 100%; height: 120px; margin-top: 15px; display: flex; flex-direction: column; align-items: center; position: relative;}
 .contactMe{width: 140px; height: 45px; border-radius: 30px; font-family: 'Short Stack', cursive; border-style: none; cursor: pointer; margin: 0 auto; background-color: tomato; color: #ffffff;}
-.contactMe:hover{animation: contact; animation-duration: 0.3s;}
+.contactMe:hover{animation-name: contact; animation-duration: 0.3s;}
 @keyframes contact{to{transform: scale(0.9);}
 from{transform: scale(1.0);}}
 .contactMe_tootip{width: 120px; background-color: #ffffff; color: black; text-align: center; border-radius: 30px; padding: 5px; position: absolute; z-index: 1; top: 55%; left: 50%; margin-left: -60px; font-size: 12px; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); display: none;}
-.contactMe_tootip:after{content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #ffffff transparent;}
-
-#scrollDownBox{width: 100%; height: 200px; background-color: red;}
-.scrollDown{width: 20px; height: 26px; border: 3px solid #333; border-radius: 60px; position: relative; margin: 140px auto 0;}
+.contactMe_tootip::after{content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #ffffff transparent;}
+#scorllDownBox{width: 100%; height: auto; margin-top: 105px;}
+#scorllDownBox>p{font-size: 12px; text-align: center; font-weight: bold;}
+.scrollDown{width: 20px; height: 26px; border: 3px solid #333; border-radius: 60px; position: relative; margin: 15px auto 0;}
 .scrollDown::before{content: ''; width: 4px; height: 4px; position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background-color: #333; border-radius: 50%; opacity: 1; animation: point 2s infinite; -webkit-animation: point 2s infinite;}
 @keyframes point{to{opacity: 0; top: 15px;}}
 @-webkit-keyframes point{to{opacity: 0; top: 15px;}}
 
 
-#aboutMeBox{width: 100%; height: 600px; background-color: darksalmon;}
-.aboutMe_text{width: 100%; height: 150px; background-color: cornflowerblue;  padding: 100px 0 0 50px;}
-.aboutMe_Left{width: 20%; height: 450px; background-color: gold; float: left; padding: 70px 50px;}
-.aboutMe_Right{width: 80%; height: 450px; background-color: cadetblue; float: right;  padding: 50px;}
-.bubble{width: 100%; height: 250px; background-color: #ffffff; border-radius: 20px; position: relative; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px;}
-.bubble:after{content: ""; position: absolute; bottom: 55%; left: -6%; margin-left: 2px; border-width: 25px; border-style: solid; border-color: transparent #ffffff transparent transparent;}
-.bubbleLeft{width: 50%; height: 100%; background-color: cadetblue; float: left;}
-.bubbleRight{width: 50%; height: 100%; background-color: chocolate; float: right;}
+#aboutMeBox{width: calc(100% - 100px); height: 600px; float: right;}
+.aboutMe_Left{width: 20%; height: 450px; float: left; padding: 70px 100px;}
+.aboutMe_Right{width: 80%; height: 450px; float: right; padding: 50px;}
+.bubble{width: 100%; height: 300px; background-color: #ffffff; border-radius: 20px; position: relative; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px;}
+.bubble:after{content: ""; position: absolute; bottom: 66%; left: -3.7%; margin-left: 2px; border-width: 15px; border-style: solid; border-color: transparent #ffffff transparent transparent;}
+.bubbleLeft{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
+.bubbleRight{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
+.illustrationBar{width: 100%; height: 10px; border-radius: 15px; background-color: #c7c7c7; position: relative; margin-top: 10px;}
+.illustrationBar::before{content: ''; height: 10px; border-radius: 15px; background-color: #ffa41e; position: absolute; animation: illust 2s linear forwards; animation-duration: 0.8s;}
+@keyframes illust{to{width: 95%;}
+from{width: 0%;}}
+
+.photoshopBar{width:100%; height: 10px; border-radius: 15px; background-color: #c7c7c7; position: relative; margin-top: 10px;}
+.photoshopBar::before{content: ''; height: 10px; border-radius: 15px; background-color: #0f2ec4; position: absolute; animation: photoshop 2s linear forwards; animation-duration: 0.8s;}
+@keyframes photoshop{to{width: 95%;}
+from{width: 0%;}}
+
+.indesignBar{width:100%; height: 10px; border-radius: 15px; background-color: #c7c7c7; position: relative; margin-top: 10px;}
+.indesignBar::before{content: ''; width: 0%; height: 10px; border-radius: 15px; background-color: #fe5da3; position: absolute; animation: indesign 2s linear forwards; animation-duration: 0.8s;}
+@keyframes indesign{to{width: 90%;}
+from{width: 0%;}}
+
+.uxuiBar{width:100%; height: 10px; border-radius: 15px; background-color: #c7c7c7; position: relative; margin-top: 10px;}
+.uxuiBar::before{content: ''; width: 0%; height: 10px; border-radius: 15px; background-color: rgb(108, 85, 241); position: absolute; animation: uxui 2s linear forwards; animation-duration: 0.8s;}
+@keyframes uxui{to{width: 85%;}
+from{width: 0%;}}
+
+.program{display: inline-block;}
+.meterbar{float: right; font-size: 14px;}
 
 
-#experienceBox{width: 100%; height: 700px; background-color: darkseagreen;}
+#experienceBox{width: calc(100% - 100px); height: 850px; background-color: darkseagreen; float: right;}
+.experienceLeft{width: 50%; height: 100%; background-color: darkgoldenrod; float: left;}
+.experienceRight{width: 50%; height: 100%; background-color: darkkhaki; float: right;}
 
-#workBox{width: 100%; height: 700px; background-color: dimgrey;}
+.leftSchrool{width: 75%; height: 550px; background-color: #ffffff; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); border-radius: 50px; margin: 70px 100px;
+  transform: translateY(0px); transition: all 1s ease; opacity: 1;}
+.rightEx{width: 75%; height: 550px; background-color: #ffffff; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); border-radius: 50px; margin: 70px 100px 0 0;}
+
+#workBox{width: calc(100% - 100px); height: 700px; background-color: dimgrey; float: right;}
+
 
