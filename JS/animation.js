@@ -1,6 +1,7 @@
 $(window).scroll(function () {
-    let wb = $(this).scrollTop();
-    if (wb > 300) {
-      $('.illustrationBar').animate(keyframe[illust], 1000);
-    }
-  });
+  let wb = $(this).scrollTop();
+  if (wb > 700) {
+    $('.illustrationBar').css({'animation':'illust'})
+    $('.photoshopBar').css('.photoshopBar::before')
+  }
+});
