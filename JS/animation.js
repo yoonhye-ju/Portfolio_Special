@@ -1,7 +1,11 @@
-$(window).scroll(function () {
-  let wb = $(this).scrollTop();
-  if (wb > 700) {
-    $('.illustrationBar').css({'animation':'illust'})
+setTimeout(() => {
     $('.photoshopBar').css('.photoshopBar::before')
-  }
-});
+  }, 9000, function(){
+    setTimeout(() => {
+      $('.illustrationBar').css('.illustrationBar::before')
+    }, 9000, function(){
+      setTimeout(() => {
+        $('.indesignBar').css('.indesignBar::before')
+      }, 9000);
+    });
+  });

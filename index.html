@@ -12,8 +12,10 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="JS/contactButton.js"></script>
+  <script src="JS/slide.js"></script>
   <script src="JS/animation.js"></script>
   <script src="JS/scroll.js"></script>
+  <script src="JS/fadeIn.js"></script>
 </head>
 
 <body>
@@ -38,37 +40,68 @@
       <div id="profileBox">
         <div class="profile">
           <img src="img/icon_me.png" alt="me" class="me" width="108" height="108">
-          <h1>Yoon, Hye-ju</h1>
+          <h2>Yoon, Hye-ju</h2>
 
-<div id="myJobBox">
-    <span>I'm a </span>
-    <div class="myJob">
-        <ul class="jobs">
-            <li>Graphic Designer</li>
-            <li>UX/UI Designer</li>
-            <li>Web Publisher</li>
-        </ul>
-    </div>
-  </div>
-
-          <div class="emailBox">
-            <!-- <img src="img/icon_google.png" alt="google" width="30" height="30">
-            <img src="img/icon_kakao.png" alt="kakao" width="30" height="30"> -->
-          </div>
-          <div class="contact">
-            <button type="button" class="contactMe">Contact Me!</button>
-            <div class="contactMe_tootip">
-              <p>010-0000-0000</p>
-            </div>
-          </div>
-          <div id="scorllDownBox">
-            <p>Scroll Down</p>
-            <div class="scrollDown"></div>
+          <div id="programBox">
+              <div id="myJobBox_01" class="slide">
+                <span class="IM1">I'm a Graphic Designer</span>
+      
+                <div class="photoshopBox">
+                  <h4 class="program">Photoshop</h4>
+                  <div class="photoshopBar"></div>
+                  <span class="meterbar">95%</span>
+                </div>
+              </div>
+      
+              <div id="myJobBox_02" class="slide">
+                <span class="IM2">I'm an Illustrator</span>
+      
+                <div class="illustrationBox">
+                  <h4 class="program">Illustration</h4>
+                  <div class="illustrationBar"></div>
+                  <span class="meterbar">95%</span>
+                </div>
+              </div>
+      
+              <div id="myJobBox_03" class="slide">
+                <span class="IM3">I'm a Editor Designer</span>
+      
+                <div class="indesignBox">
+                  <h4 class="program">Indesign</h4>
+                  <div class="indesignBar"></div>
+                  <span class="meterbar">80%</span>
+                </div>
+              </div>
+      
+              <div id="myJobBox_04" class="slide">
+                <span class="IM4">I'm a Web Publisher</span>
+      
+                <div class="uxuiBox">
+                  <h4 class="program">UX/UI</h4>
+                  <div class="uxuiBar"></div>
+                  <span class="meterbar">85%</span>
+              </div>
           </div>
         </div>
+
+        <div id="contact">
+          <img src="img/icon_previous.png" height="20" class="prev play">
+          <img src="img/icon_play.png" class="contactMe" width="50" height="50">
+          <img src="img/icon_next.png" height="20" class="next play">
+          <div class="contactMe_tootip">
+            <p>010-0000-0000</p>
+          </div>
+        </div>
+
+        <div id="scorllDownBox">
+          <p>Scroll Down</p>
+          <div class="scrollDown"></div>
       </div>
+        </div>
+      </div>  
     </div>
   </div>
+
 
   <div id="aboutMeBox">
     <div class="contentBox">
@@ -84,50 +117,27 @@
           </p>
         </div>
         <div class="bubbleRight">
-          <div class="illustrationBox">
-            <h4 class="program">Illustration</h4>
-            <span class="meterbar">95%</span>
-            <div class="illustrationBar"></div>
-          </div>
-
-          <div class="photoshopBox">
-            <h4 class="program">Photoshop</h4>
-            <span class="meterbar">95%</span>
-            <div class="photoshopBar"></div>
-          </div>
-
-          <div class="indesignBox">
-            <h4 class="program">Indesign</h4>
-            <span class="meterbar">90%</span>
-            <div class="indesignBar"></div>
-          </div>
-
-          <div class="uxuiBox">
-            <h4 class="program">UX/UI</h4>
-            <span class="meterbar">85%</span>
-            <div class="uxuiBar"></div>
-          </div>
         </div>
       </div>
+      <img src="img/icon_whale.png" class="whale">
     </div>
     </div>
   </div>
 
-  <div id="experienceBox">
+  <div id="portfolioBox">
     <div class="contentBox">
-      <h1 class="portfolio_text">Experience</h1>
-      <div class="experienceLeft">
-        <div class="leftSchrool">
+      <h1 class="portfolio_text">Portfolio</h1>
+      <div class="portfolio_box">
+        <div class="portfolio portfolio1">
         </div>
-      </div>
-      <div class="experienceRight">
-        <div class="rightEx"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
       </div>
     </div>
   </div>
 
-  <div id="workBox">
-    
-  </div>
 </body>
 </html>

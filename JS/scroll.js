@@ -1,10 +1,15 @@
 $(window).scroll(function () {
-    let move = $(this).scrollTop();
-    if (move > 1400) {
-      $('.leftSchrool').css("transform", "translateY(0px)").css("opacity", "1");
-    }
-    if (move > 1000) {
-      $('.rightEx').css("transform", "translateY(0px)").css("opacity", "1");
-    }
+  let wb = $(this).scrollTop();
+  if (wb > 350) {
+    $('.portfolio_text').css("transform", "translateY(0px)").css("opacity", "1");
+  }
+  if (wb > 450) {
+    $('.aboutMe_Left').css("transform", "translateY(0px)").css("opacity", "1");
+  }
+  if (wb > 550) {
+    $('.bubble').css("transform", "translateY(0px)").css("opacity", "1");
+  }
+  if (wb > 750){
+    $('.whale').css("transform", "translateY(0px)").css("opacity", "0.5");
+  }
 });
-  
