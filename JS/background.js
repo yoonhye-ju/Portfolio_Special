@@ -109,7 +109,7 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-particlesJS("particles-js", {
+particlesJS("particlesjs", {
   "particles": {
     "number": {
       "value": 355,

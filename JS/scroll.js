@@ -3,6 +3,9 @@ $(window).scroll(function () {
   if (wb > 350) {
     $('.portfolio_text').css("transform", "translateY(0px)").css("opacity", "1");
   }
+  if (wb > 400) {
+    $('.starlight').css("transform", "translateY(0px)").css("opacity", "1");
+  }
   if (wb > 450) {
     $('.aboutMe_Left').css("transform", "translateY(0px)").css("opacity", "1");
   }
@@ -18,10 +21,19 @@ $(window).scroll(function () {
   if (wb > 700) {
     $('.company2').css("transform", "translateY(0px)").css("opacity", "1");
   }
-  if (wb > 1200){
+  if (wb > 800) {
+    $('.school').css("transform", "translateY(0px)").css("opacity", "1");
+  }
+  if (wb > 850) {
+    $('.prize').css("transform", "translateY(0px)").css("opacity", "1");
+  }
+  if (wb > 1000) {
     $('.whale').css("transform", "translateY(0px)").css("opacity", "0.5");
   }
-  else if(wb < 1200){
+  else if (wb < 1000) {
     $('.whale').css("transform", "translateY(0px)").css("opacity", "0");
-  };
+  }
+  if (wb > 1300) {
+    $('#portfolioBox').css("background", "linear-gradient(0deg, rgb(255, 255, 255) 50%, rgba(208,179,212,1) 80%, rgba(148,187,233,1) 100%)");
+  }
 });

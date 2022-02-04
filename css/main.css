@@ -5,13 +5,17 @@ li, ul, ol{list-style: none;}
 a{text-decoration: none;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto;}
-.portfolio_text{width: 100%; height: 150px; padding: 100px 0 0 100px;}
 
-header{width: 100px; height: 100vh; position: fixed; background-color: rgba(238,174,202,1) 100%;}
+/* header{width: 100px; height: 100vh; position: fixed; background-color: rgba(238,174,202,1)} */
 
 #particles-js{position: absolute; width: 100%; height: 100%;}
+#particlesjs{position: absolute; width: 100%; height: 100%;}
 
-#top{width: calc(100% - 100px); height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
+.portfolio_text, .portfolio_text1{width: 100%; height: 150px; padding: 100px 0 0 100px;}
+
+/* #top{width: calc(100% - 100px); height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;} */
+
+#top{width: 100%; height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
 #profileBox{width: 100%; height: 100%; margin: 0 auto; position: relative;}
 .cellphone{position: absolute; top: 90px; left: 396px;}
 .profile{width: 30%; height: 100%; display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding-top: 200px; overflow: hidden;}
@@ -55,8 +59,8 @@ from{width: 0%;}}
 .program{display: inline-block; font-size: 14px;}
 .meterbar{float: right; font-size: 14px;}
 
-
-#contact{width: calc(100% - 100px); height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;}
+/* #contact{width: calc(100% - 100px); height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;} */
+#contact{width: 80%; height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;}
 .contactMe{cursor: pointer; margin: 0 auto; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
 .contactMe:hover{animation-name: contact; animation-duration: 0.3s;}
 @keyframes contact{to{transform: scale(0.9);}
@@ -66,31 +70,42 @@ from{transform: scale(1.0);}}
 .contactMe_tootip::after{content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #ffffff transparent;}
 .play{cursor: pointer;}
 
-#scorllDownBox{width: calc(100% - 100px); height: auto; margin-top: 180px;}
+/* #scorllDownBox{width: calc(100% - 100px); height: auto; margin-top: 180px;} */
+
+#scorllDownBox{width: 100%; height: auto; margin-top: 180px;}
 #scorllDownBox>p{font-size: 12px; text-align: center; font-weight: bold; color: #ffffff;}
 .scrollDown{width: 20px; height: 26px; border: 3px solid #ffffff; border-radius: 60px; position: relative; margin: 15px auto 0;}
 .scrollDown::before{content: ''; width: 4px; height: 4px; position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background-color: #ffffff; border-radius: 50%; opacity: 1; animation: point 2s infinite; -webkit-animation: point 2s infinite;}
 @keyframes point{to{opacity: 0; top: 15px;}}
 @-webkit-keyframes point{to{opacity: 0; top: 15px;}}
 
+/* #aboutMeBox{width: calc(100% - 100px); height: 937px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;} */
 
-#aboutMeBox{width: calc(100% - 100px); height: 937px; float: left; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
+#aboutMeBox{width: 100%; height: 937px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
+#aboutMeBox>.contentBox{position: relative;}
 .portfolio_text{transform: translateY(100px); transition: all 1s; opacity: 0;}
 .aboutMe_Left{width: 20%; height: 787px; float: left; padding: 70px 100px; transform: translateY(100px); transition: all 1s; opacity: 0;}
-.aboutMe_Right{width: 80%; height: 787px; float: right; padding: 50px;}
-.bubble{width: 100%; height: 200px; background-color: #ffffff; border-radius: 20px; position: relative; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px;margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.starlight{position: absolute; filter: drop-shadow(0px 5px 10px rgba(148,187,233,1)); transform: translateY(100px); transition: all 1s; opacity: 0;}
+.star{position: absolute; top: 700px; left: -100px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+.aboutMe_Right{width: 80%; height: 787px; position: absolute; right: 0; z-index: 3; padding: 50px;}
+.bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px;margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .bubble:after{content: ""; position: absolute; bottom: 66%; left: -3.7%; margin-left: 2px; border-width: 15px; border-style: solid; border-color: transparent #ffffff transparent transparent;}
 .bubbleLeft{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
 .bubbleRight{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
-.company1{transform: translateY(100px); transition: all 1s; opacity: 0;}
-.company2{transform: translateY(100px); transition: all 1s; opacity: 0;}
+.company1, .company2{transform: translateY(100px); transition: all 1s; opacity: 0;}
+.school, .prize{transform: translateY(100px); transition: all 1s; opacity: 0;}
+
+.company1, .company2 p{font-size: 13px;}
+.school, .prize p{font-size: 13px;}
 
 .bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px;transform: translateY(100px); transition: all 1s; opacity: 0;}
 .bubble2Left{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
 .bubble2Right{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
-.whale{top: 400px; left: 400px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
+.whale{top: 300px; left: 400px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
 
 
-#portfolioBox{width: calc(100% - 100px); height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right;}
+/* #portfolioBox{width: calc(100% - 100px); height: 937px; float: right; transition: all 1s;} */
+#portfolioBox{width: 100%; height: 937px; float: right; transition: all 1s;}
+
 
 

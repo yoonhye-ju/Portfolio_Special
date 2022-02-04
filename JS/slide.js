@@ -19,11 +19,13 @@ function slide() {
 }
 setInterval(slide, 3000);
 
+$(function(){
 $('.prev').click(function () {
   prev();
 });
 $('.next').click(function () {
   next();
+});
 });
 
 
