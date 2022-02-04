@@ -1,3 +1,4 @@
+$(function () {
 function prev() {
   $('.slide:last').prependTo('#programBox');
   $('#programBox').css('margin-left', -360);
@@ -19,13 +20,12 @@ function slide() {
 }
 setInterval(slide, 3000);
 
-$(function(){
-$('.prev').click(function () {
-  prev();
-});
-$('.next').click(function () {
-  next();
-});
+  $('.prev').click(function () {
+    prev();
+  });
+  $('.next').click(function () {
+    next();
+  });
 });
 
 
