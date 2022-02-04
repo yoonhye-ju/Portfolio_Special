@@ -3,7 +3,7 @@ $(window).scroll(function () {
   if (wb > 350) {
     $('.portfolio_text').css("transform", "translateY(0px)").css("opacity", "1");
   }
-  if (wb > 400) {
+  if (wb > 200) {
     $('.starlight').css("transform", "translateY(0px)").css("opacity", "1");
   }
   if (wb > 450) {
@@ -33,7 +33,7 @@ $(window).scroll(function () {
   else if (wb < 1000) {
     $('.whale').css("transform", "translateY(0px)").css("opacity", "0");
   }
-  if (wb > 1300) {
+  if (wb > 1000) {
     $('#portfolioBox').css("background", "linear-gradient(0deg, rgb(255, 255, 255) 50%, rgba(208,179,212,1) 80%, rgba(148,187,233,1) 100%)");
   }
 });
