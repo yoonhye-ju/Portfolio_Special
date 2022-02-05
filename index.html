@@ -18,6 +18,7 @@
   <script src="JS/scroll.js"></script>
   <script src="JS/monitorScroll.js"></script>
   <script src="JS/background.js"></script>
+  <script src="JS/portfolioButton.js"></script>
 </head>
 
 <body>
@@ -166,19 +167,76 @@
   </div>
 
   <div id="portfolioBox">
-    <div class="portfolioBox_left">
+    <div class="contentBox">
       <h1 class="portfolio_text1">Portfolio</h1>
-    </div>
-    <div class="portfolioBox_right">
-      <div class="pc_library">
-        <div class="monitor">
-          <img src="img/portfolio_online_library.jpeg" width="776" class="library">
-          <img src="img/portfolio_online_library_sub.jpeg" width="776" class="librarySub">
+
+      <div class="portfolio">
+        <div class="dotBox">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
         </div>
-        <img src="img/PC.png" alt="pc" class="pc">
+
+        <div class="Portfolio_Box">
+          <div class="library_left">
+            <div class="libraryLeft"></div>
+            <div class="library_Monitor">
+              <img src="img/portfolio_online_library.jpeg" width="441" class="library">
+              <img src="img/portfolio_online_library_sub.jpeg" width="441" class="librarySub">
+            </div>
+            <img src="img/PC.png" class="pc1">
+            <p class="subPage">Sub Page &rarr;</p>
+          </div>
+  
+          <div class="library_right">
+            <span class="portfolioNumber">NO.1</span>
+            <h5>API를 이용한 온라인 서점</h5>
+            <h1>ONLINE<br>BOOKSTORE</h1>
+            <p>카카오에서 배포하는 API 기능을 사용하여 제작한 온라인 서점 홈페이지입니다.</p>
+            <button class="mainButton"><a href="https://yoonhye-ju.github.io/Portfolio_OnlineBookStore/">Main page</a></button>
+            <button class="subButton"><a href="https://yoonhye-ju.github.io/Portfolio_OnlineBookStore/sub.html">Sub Page</a></button>
+          </div>
+        </div>
+
+        <!-- <div class="cocktail_Box">
+          <div class="cocktail_left">
+          </div>
+          <div class="cocktail_right">
+          </div>
+        </div> -->
+        
+        <div class="Portfolio_Box">
+            <div class="WWF_left">
+              <div class="WWFLeft"></div>
+              <div class="WWF_Monitor">
+                <img src="img/portfolio_WWF_pc.jpeg" width="441" class="WWF">
+              </div>
+              <img src="img/PC.png" class="pc2">
+              <div class="WWF_tablet">
+                <img src="img/portfolio_WWF_tablet.jpeg" class="WWFtablet" width="100">
+                <img src="img/tablet.png" class="tablet">
+              </div>
+              <p class="subPage">Sub Page &rarr;</p>
+            </div>
+
+            <div class="WWF_right">
+              <span class="portfolioNumber">NO.3</span>
+              <h5>WWF 홈페이지 리뉴얼</h5>
+              <h1>WWF<br>HOMEPAGE</h1>
+              <p>카카오에서 배포하는 API 기능을 사용하여 제작한 온라인 서점 홈페이지입니다.</p>
+              <button class="mainButton"><a href="https://yoonhye-ju.github.io/Portfolio_WWF/">Main page</a></button>
+              <button class="subButton"><a href="https://yoonhye-ju.github.io/Portfolio_WWF/sub.html">Sub Page</a></button>
+          </div>
+        </div>
       </div>
+
     </div>
-  </div>
+
+
+
+
 
 </body>
 </html>

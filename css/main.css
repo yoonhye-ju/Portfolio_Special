@@ -2,7 +2,7 @@
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 li, ul, ol{list-style: none;}
-a{text-decoration: none;}
+a:link, a:visited, a:hover{text-decoration: none; color: inherit;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto;}
 
@@ -11,7 +11,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #particles-js{position: absolute; width: 100%; height: 100%;}
 #particlesjs{position: absolute; width: 100%; height: 100%;}
 
-.portfolio_text, .portfolio_text1{width: 100%; height: 150px; padding: 100px 0 0 100px;}
+.portfolio_text, .portfolio_text1{width: 100%; height: 150px; padding: 100px 0 0 100px; }
 
 /* #top{width: calc(100% - 100px); height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;} */
 
@@ -103,14 +103,64 @@ from{transform: scale(1.0);}}
 .bubble2Right{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
 .whale{top: 300px; left: 400px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
 
-
 /* #portfolioBox{width: calc(100% - 100px); height: 937px; float: right; transition: all 1s;} */
-#portfolioBox{width: 100%; height: 937px; float: right;}
-.portfolioBox_left{width: 50%; height: 100%; background-color: cadetblue; float: left;}
-.portfolioBox_right{width: 50%; height: 100%; background-color:darkblue ; float: right;}
 
-.pc{width: 100%; }
-.pc_library{width: 100%; height: 800px; position: relative;}
-.monitor{width: 776px; height: 438px; position: absolute; top: 81px; left: 224px; overflow: hidden;}
+/*포트폴리오 박스*/
+#portfolioBox{width: 100%; height: 937px; float: right; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); position: relative;}
+.portfolio{width: 100%; height: 700px; background-color: #ffffff; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); margin-top: 50px;}
+
+/*포트폴리오 하단 버튼*/
+button{height: 35px; background: #1AAB8A; color: #ffffff; border: none; position: relative; font-size: 13px; padding: 10px; cursor: pointer; transition: 800ms ease all; outline: none; margin: 20px 20px 0px 0px;}
+button:hover{background:#fff; color:#1AAB8A;}
+button:before, button:after{content:''; position: absolute; top:0; right:0; width:0px; height:2px; background: #1AAB8A; transition: 400ms ease all;}
+button:after{right: inherit; top: inherit; left: 0; bottom: 0;}
+button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
+
+/*오른쪽 버튼*/
+.dotBox{width: 5%; height: 700px; float: right; display: flex; flex-flow: column; align-items: center; justify-content: center;}
+.dot {cursor: pointer; width: 13px; height: 13px; margin: 0 5px; background-color: rgba(238,174,202,1); border-radius: 50%; display: inline-block; transition: background-color 0.5s ease; border: 2px solid white; margin: 5px;}
+.active, .dot:hover {background-color: rgba(148,187,233,1)}
+
+/*포트폴리오 공통*/
+.Portfolio_Box{width: 95%; height: 700px; margin-top: 50px; animation: fade 1s linear forwards;}
+@keyframes fade {from {opacity: 0.5} to {opacity: 1}}
+.Portfolio_Box:not(:first-of-type){display: none;}
+
+/*온라인서점 포트폴리오*/
+.library_left{width: 60%; height: 100%; position: relative; float: left;}
+.libraryLeft{width: 200px; height: 100%; background-color: gold; position: absolute;}
+
 .library{transition: all 10s linear; transform: translateY(0px);}
-.librarySub{transition: 10s linear; transform: translateY(0px); display: none;}
+.librarySub{transition: all 10s linear; transform: translateY(0px); display: none;}
+
+.library_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
+.library_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
+
+.pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
+.subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
+.library_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden;}
+
+
+
+/*칵테일 포트폴리오*/
+/* .cocktail_Box{width: 95%; height: 700px; margin-top: 50px;} */
+
+
+/*WWF 포트폴리오*/
+.WWF_Box{width: 95%; height: 700px; margin-top: 50px;}
+.WWF_left{width: 60%; height: 100%; position: relative; float: left;}
+.WWFLeft{width: 200px; height: 100%; background-color: cornflowerblue; position: absolute;}
+
+.WWF{transition: all 10s linear; transform: translateY(0px);}
+.WWFSub{transition: all 10s linear; transform: translateY(0px); display: none;}
+.tablet{width: 30%; position: absolute; margin: 320px 0px 0px 460px;}
+.WWFtablet{position: absolute;}
+
+.WWF_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
+.WWF_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
+
+.pc2{width: 100%; margin: 130px 0 0 50px; position: absolute;}
+.subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
+.WWF_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden;}

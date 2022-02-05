@@ -33,7 +33,4 @@ $(window).scroll(function () {
   else if (wb < 1000) {
     $('.whale').css("transform", "translateY(0px)").css("opacity", "0");
   }
-  if (wb > 1000) {
-    $('#portfolioBox').css("background", "linear-gradient(0deg, rgb(255, 255, 255) 50%, rgba(208,179,212,1) 80%, rgba(148,187,233,1) 100%)");
-  }
 });
