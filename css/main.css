@@ -167,16 +167,20 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .WWFLeft{width: 200px; height: 100%; background-color: cornflowerblue; position: absolute;}
 
 .WWF{transition: all 10s linear; transform: translateY(0px);}
-.WWFSub{transition: all 10s linear; transform: translateY(0px); display: none;}
+.WWFsubPC{transition: all 8s linear; transform: translateY(0px); display: none;}
+
 .WWFtablet{transition: all 10s linear; transform: translateY(0px);}
+.WWFsubTablet{transition: all 6s linear; transform: translateY(0px); display: none;}
+
 .WWFmobile{transition: all 10s linear; transform: translateY(0px);}
+.WWFsubMobile{transition: all 5s linear; transform: translateY(0px); display: none;}
 
 .tablet{width: 30%; position: absolute; margin: 320px 0px 0px 460px;}
-.WWF_tablet{width: 148px; height: 195px; position: absolute; top: 360px; left: 490px; overflow: hidden;}
+.WWF_tablet{width: 148px; height: 195px; position: absolute; top: 360px; left: 490px; overflow: hidden; cursor: move;}
 .WWFtablet{position: absolute; cursor: move;}
 
 .WWFmobile{position: absolute; cursor: move;}
-.WWF_mobile{width: 85px; height: 150px; position:absolute; top: 404px; left: 148px; overflow: hidden;}
+.WWF_mobile{width: 85px; height: 150px; position:absolute; top: 404px; left: 148px; overflow: hidden; cursor: move;}
 .mobile{width: 18%; position: absolute; margin: 370px 0 0 130px;}
 
 .WWF_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
@@ -192,9 +196,14 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .tenThousand_left{width: 60%; height: 100%; position: relative; float: left;}
 .tenThousandLeft{width: 200px; height: 100%; background-color: #74b243; position: absolute;}
 
-.recipe{transition: all 10s linear; transform: translateY(0px);} 
-.recipetablet{transition: all 10s linear; transform: translateY(0px);}
-.recipemobile{transition: all 10s linear; transform: translateY(0px);}
+.recipe{transition: all 5s linear; transform: translateY(0px);}
+.recipeSub{transition: all 4s linear; transform: translateY(0px);}
+
+.recipetablet{transition: all 8s linear; transform: translateY(0px);}
+.recipetabletSub{transition: all 4s linear; transform: translateY(0px);}
+
+.recipemobile{transition: all 8s linear; transform: translateY(0px);}
+.recipemobileSub{transition: all 5s linear; transform: translateY(0px);}
 
 .tablet{width: 30%; position: absolute; margin: 320px 0px 0px 460px;}
 .tenThousand_tablet{width: 148px; height: 195px; position: absolute; top: 360px; left: 490px; overflow: hidden; cursor: move;}
