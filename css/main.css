@@ -124,13 +124,18 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 /*포트폴리오 공통*/
 .Portfolio_Box{width: 95%; height: 700px; margin-top: 50px; animation: fade 1s linear forwards;}
 @keyframes fade {from {opacity: 0.5} to {opacity: 1}}
-.Portfolio_Box:not(:first-of-type){display: none;}
+.Portfolio_Box:first-of-type{display: block;}
+.Portfolio_Box:nth-of-type(2){display: none;}
+.Portfolio_Box:nth-of-type(3){display: none;}
+.Portfolio_Box:nth-of-type(4){display: none;}
+.Portfolio_Box:nth-of-type(5){display: none;}
+.Portfolio_Box:nth-of-type(6){display: none;}
 
 /*온라인서점 포트폴리오*/
 .library_left{width: 60%; height: 100%; position: relative; float: left;}
 .libraryLeft{width: 200px; height: 100%; background-color: gold; position: absolute;}
 
-.library{transition: all 10s linear; transform: translateY(0px);}
+.library{transition: all 10s linear; transform: translateY(0px); cursor: move;}
 .librarySub{transition: all 10s linear; transform: translateY(0px); display: none;}
 
 .library_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
@@ -139,23 +144,40 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 
 .pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
 .subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
-.library_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden;}
-
+.library_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden; cursor: move;}
 
 
 /*칵테일 포트폴리오*/
-/* .cocktail_Box{width: 95%; height: 700px; margin-top: 50px;} */
+.cocktail_left{width: 60%; height: 100%; position: relative; float: left;}
+.cocktailLeft{width: 200px; height: 100%; background-color: #f691a3; position: absolute;}
+
+.cocktail{transition: all 10s linear; transform: translateX(0px);}
+
+.cocktail_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
+.cocktail_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
+
+.pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
+.subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
+.cocktail_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden; cursor: move;}
 
 
 /*WWF 포트폴리오*/
-.WWF_Box{width: 95%; height: 700px; margin-top: 50px;}
 .WWF_left{width: 60%; height: 100%; position: relative; float: left;}
 .WWFLeft{width: 200px; height: 100%; background-color: cornflowerblue; position: absolute;}
 
 .WWF{transition: all 10s linear; transform: translateY(0px);}
 .WWFSub{transition: all 10s linear; transform: translateY(0px); display: none;}
+.WWFtablet{transition: all 10s linear; transform: translateY(0px);}
+.WWFmobile{transition: all 10s linear; transform: translateY(0px);}
+
 .tablet{width: 30%; position: absolute; margin: 320px 0px 0px 460px;}
-.WWFtablet{position: absolute;}
+.WWF_tablet{width: 148px; height: 195px; position: absolute; top: 360px; left: 490px; overflow: hidden;}
+.WWFtablet{position: absolute; cursor: move;}
+
+.WWFmobile{position: absolute; cursor: move;}
+.WWF_mobile{width: 85px; height: 150px; position:absolute; top: 404px; left: 148px; overflow: hidden;}
+.mobile{width: 18%; position: absolute; margin: 370px 0 0 130px;}
 
 .WWF_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
@@ -163,4 +185,60 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 
 .pc2{width: 100%; margin: 130px 0 0 50px; position: absolute;}
 .subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
-.WWF_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden;}
+.WWF_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden; cursor: move;}
+
+
+/*만개의레시피 포트폴리오*/
+.tenThousand_left{width: 60%; height: 100%; position: relative; float: left;}
+.tenThousandLeft{width: 200px; height: 100%; background-color: #74b243; position: absolute;}
+
+.recipe{transition: all 10s linear; transform: translateY(0px);} 
+.recipetablet{transition: all 10s linear; transform: translateY(0px);}
+.recipemobile{transition: all 10s linear; transform: translateY(0px);}
+
+.tablet{width: 30%; position: absolute; margin: 320px 0px 0px 460px;}
+.tenThousand_tablet{width: 148px; height: 195px; position: absolute; top: 360px; left: 490px; overflow: hidden; cursor: move;}
+.tenThousandtablet{position: absolute;}
+
+.tenThousandmobile{position: absolute;}
+.tenThousand_mobile{width: 85px; height: 150px; position:absolute; top: 404px; left: 148px; overflow: hidden; cursor: move;}
+.mobile{width: 18%; position: absolute; margin: 370px 0 0 130px;}
+
+.tenThousand_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
+.tenThousand_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
+
+.subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
+.tenThousand_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden; cursor: move;}
+
+
+/*경복궁 포트폴리오*/
+.korea_left{width: 60%; height: 100%; position: relative; float: left;}
+.koreaLeft{width: 200px; height: 100%; background-color: #1e3361; position: absolute;}
+
+.korea{transition: all 10s linear; transform: translateY(0px);}
+
+.korea_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
+.korea_right h1{font-size: 50px; line-height: 65px; margin-bottom: 30px;}
+
+.pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
+.subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
+.korea_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden; cursor: move;}
+
+
+/*조말론 포트폴리오*/
+.perfume_left{width: 60%; height: 100%; position: relative; float: left;}
+.perfumeLeft{width: 200px; height: 100%; background-color: #66c394; position: absolute;}
+
+.perfume{transition: all 2.5s linear; transform: translateY(0px);}
+.perfumeSub{transition: all 8s linear; transform: translateY(0px);}
+
+.perfume_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
+.perfume_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
+
+.pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
+.subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
+.mainPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 355px; cursor: pointer; display: none;}
+.perfume_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden; cursor: move;}
