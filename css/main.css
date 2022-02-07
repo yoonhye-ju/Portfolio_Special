@@ -98,7 +98,7 @@ from{transform: scale(1.0);}}
 .company1, .company2 p{font-size: 13px;}
 .school, .prize p{font-size: 13px;}
 
-.bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px;transform: translateY(100px); transition: all 1s; opacity: 0;}
+.bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .bubble2Left{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
 .bubble2Right{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
 .whale{top: 300px; left: 400px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
@@ -122,21 +122,28 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .active, .dot:hover {background-color: rgba(148,187,233,1)}
 
 /*포트폴리오 공통*/
-.Portfolio_Box{width: 95%; height: 700px; margin-top: 50px; animation: fade 1s linear forwards;}
-@keyframes fade {from {opacity: 0.5} to {opacity: 1}}
-.Portfolio_Box:first-of-type{display: block;}
-.Portfolio_Box:nth-of-type(2){display: none;}
+.Portfolio_Box{width: 95%; height: 700px; margin-top: 50px;}
+
+/*포트폴리오 페이드인*/
+.rightBox{animation: fade 0.5s linear forwards;}
+@keyframes fade {from {opacity: 0} to {opacity: 1}}
+
+.leftBox{animation: garo 0.5s linear forwards; transition: all 1s;}
+@keyframes garo {from {width: 0px} to {width: 200px}}
+
+/*포트폴리오 버튼*/
 .Portfolio_Box:nth-of-type(3){display: none;}
 .Portfolio_Box:nth-of-type(4){display: none;}
 .Portfolio_Box:nth-of-type(5){display: none;}
 .Portfolio_Box:nth-of-type(6){display: none;}
+.Portfolio_Box:nth-of-type(7){display: none;}
 
 /*온라인서점 포트폴리오*/
 .library_left{width: 60%; height: 100%; position: relative; float: left;}
 .libraryLeft{width: 200px; height: 100%; background-color: gold; position: absolute;}
 
-.library{transition: all 10s linear; transform: translateY(0px); cursor: move;}
-.librarySub{transition: all 10s linear; transform: translateY(0px); display: none;}
+.library{transition: all 8s linear; transform: translateY(0px); cursor: move;}
+.librarySub{transition: all 8s linear; transform: translateY(0px); display: none;}
 
 .library_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
@@ -166,14 +173,14 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .WWF_left{width: 60%; height: 100%; position: relative; float: left;}
 .WWFLeft{width: 200px; height: 100%; background-color: cornflowerblue; position: absolute;}
 
-.WWF{transition: all 10s linear; transform: translateY(0px);}
-.WWFsubPC{transition: all 8s linear; transform: translateY(0px); display: none;}
+.WWF{transition: all 8s linear; transform: translateY(0px);}
+.WWFsubPC{transition: all 3s linear; transform: translateY(0px); display: none;}
 
 .WWFtablet{transition: all 10s linear; transform: translateY(0px);}
-.WWFsubTablet{transition: all 6s linear; transform: translateY(0px); display: none;}
+.WWFsubTablet{transition: all 3s linear; transform: translateY(0px); display: none;}
 
 .WWFmobile{transition: all 10s linear; transform: translateY(0px);}
-.WWFsubMobile{transition: all 5s linear; transform: translateY(0px); display: none;}
+.WWFsubMobile{transition: all 3s linear; transform: translateY(0px); display: none;}
 
 .tablet{width: 30%; position: absolute; margin: 320px 0px 0px 460px;}
 .WWF_tablet{width: 148px; height: 195px; position: absolute; top: 360px; left: 490px; overflow: hidden; cursor: move;}
@@ -250,4 +257,4 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
 .subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
 .mainPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 355px; cursor: pointer; display: none;}
-.perfume_Monitor{width: 441px; height: 248px; position: absolute; top: 178px; left: 178px; overflow: hidden; cursor: move;}
+.perfume_Monitor{width: 441px; height: 248px; position: absolute; top: 177px; left: 178px; overflow: hidden; cursor: move;}

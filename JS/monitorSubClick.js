@@ -1,4 +1,39 @@
 $(function(){
+    //온라인서점
+    $('.library_Monitor').mouseover(function(){
+      $('.library').css('transform','translateY(-1215px)')
+    });
+    $('.library_Monitor').mouseout(function(){
+      $('.library').css('transform','translateY(0px)')
+    });
+    $('.subPage').click(function () {
+      $('.library').css('display', 'none');
+      $('.librarySub').css('display', 'block');
+      $('.subPage').hide();
+      $('.mainPage').show();
+  
+      $('.library_Monitor').mouseover(function () {
+        $('.librarySub').css('transform', 'translateY(-1100px)')
+      });
+      $('.library_Monitor').mouseout(function () {
+        $('.librarySub').css('transform', 'translateY(0px)')
+      });
+    });
+    $('.mainPage').click(function () {
+      $('.library').css('display', 'block');
+      $('.librarySub').css('display', 'none');
+      $('.mainPage').hide();
+      $('.subPage').show();
+    });
+
+    //칵테일
+    $('.cocktail_Monitor').mouseover(function(){
+      $('.cocktail').css('transform','translateX(-2005px)')
+    });
+    $('.cocktail_Monitor').mouseout(function(){
+      $('.cocktail').css('transform','translateX(0px)')
+    });
+
     //WWF
     $('.WWF_Monitor').mouseover(function(){
       $('.WWF').css('transform','translateY(-1190px)')
@@ -30,19 +65,19 @@ $(function(){
       $('.mainPage').show();
   
       $('.WWF_Monitor').mouseover(function () {
-        $('.WWFsubPC').css('transform', 'translateY(-400px)')
+        $('.WWFsubPC').css('transform', 'translateY(-433px)')
       });
       $('.WWF_Monitor').mouseout(function () {
         $('.WWFsubPC').css('transform', 'translateY(0px)')
       });
       $('.WWF_tablet').mouseover(function () {
-        $('.WWFsubTablet').css('transform', 'translateY(-400px)')
+        $('.WWFsubTablet').css('transform', 'translateY(-365px)')
       });
       $('.WWF_tablet').mouseout(function () {
         $('.WWFsubTablet').css('transform', 'translateY(0px)')
       });
       $('.WWF_mobile').mouseover(function () {
-        $('.WWFsubMobile').css('transform', 'translateY(-300px)')
+        $('.WWFsubMobile').css('transform', 'translateY(-380px)')
       });
       $('.WWF_mobile').mouseout(function () {
         $('.WWFsubMobile').css('transform', 'translateY(0px)')
