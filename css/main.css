@@ -6,21 +6,30 @@ a:link, a:visited, a:hover{text-decoration: none; color: inherit;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto;}
 
-/* header{width: 100px; height: 100vh; position: fixed; background-color: rgba(238,174,202,1)} */
+header{width: 100px; height: 100vh; position: fixed; background-color: rgba(238,174,202,1); filter: drop-shadow(0px 0px 4px rgb(87, 119, 228)); z-index: 1;}
+ul{display: flex; flex-direction: column; align-items: center; padding-right: 8px; margin-top: 300px;}
+ul li{padding-top: 30px;}
+
+.headerIcon{width: 35px; cursor: pointer;}
+.people{width: 30px; cursor: pointer;}
 
 #particles-js{position: absolute; width: 100%; height: 100%;}
 #particlesjs{position: absolute; width: 100%; height: 100%;}
+#particles_js{position: absolute; width: 100%; height: 100%;}
 
-.portfolio_text, .portfolio_text1{width: 100%; height: 150px; padding: 100px 0 0 100px; }
+.portfolio_text,.portfolio_text1{width: 100%; height: 150px; padding: 100px 0 0 100px; font-family: 'Comfortaa', cursive; font-weight: bold; font-size: 45px;}
 
-/* #top{width: calc(100% - 100px); height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;} */
+#top{width: calc(100% - 100px); height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
 
-#top{width: 100%; height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
 #profileBox{width: 100%; height: 100%; margin: 0 auto; position: relative;}
-.cellphone{position: absolute; top: 90px; left: 396px;}
+.cellphone{position: absolute; top: 90px; left: 396px; filter: drop-shadow(0px 0px 10px rgba(238,174,202));}
 .profile{width: 30%; height: 100%; display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding-top: 200px; overflow: hidden;}
-.me{margin-bottom: 20%; filter: drop-shadow(0px 5px 10px rgba(208,179,212,1));}
-.planet{position: absolute; top: 100px; right: 100px; opacity: 0.8; filter: drop-shadow(0px 5px 10px rgba(208,179,212,1));}
+.me{margin-bottom: 20%; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+.planet{position: absolute; right: 100px; opacity: 1; filter: drop-shadow(0px 5px 10px rgba(148,187,233,1)); animation: planet 2s ease-in-out infinite;}
+@keyframes planet{0% {top: 353px;} 50% {top: 350px;} 100%{top: 353px}}
+
+.moon{width: 100px; position: absolute; left: 100px; opacity: 1; filter: drop-shadow(0px 5px 10px rgba(208,179,212,1)); animation: moon 2s ease-in-out infinite;}
+@keyframes moon{0% {top: 100px;} 50% {top: 105px;} 100%{top: 100px}}
 
 #programBox{width: 1440px; height: 100px; margin: 10px auto; float: right;}
 .IM1{display: inline-block; margin: 0 0 30px 90px; color: #666;}
@@ -59,60 +68,61 @@ from{width: 0%;}}
 .program{display: inline-block; font-size: 14px;}
 .meterbar{float: right; font-size: 14px;}
 
-/* #contact{width: calc(100% - 100px); height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;} */
-#contact{width: 80%; height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;}
+#contact{width: calc(100% - 100px); height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;}
+
 .contactMe{cursor: pointer; margin: 0 auto; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
 .contactMe:hover{animation-name: contact; animation-duration: 0.3s;}
 @keyframes contact{to{transform: scale(0.9);}
 from{transform: scale(1.0);}}
 
-.contactMe_tootip{width: auto; background-color: #ffffff; color: black; text-align: center; border-radius: 30px; padding: 10px; position: absolute; z-index: 1; top: 55%; left: 45%; margin: 40px 0 0 -53px; font-size: 12px; font-family: 'Short Stack'; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); display: none;}
+.contactMe_tootip{width: auto; background-color: #ffffff; color: black; text-align: center; border-radius: 30px; padding: 10px; position: absolute; z-index: 1; top: 55%; left: 47%; margin: 40px 0 0 -53px; font-size: 12px; font-family: 'Short Stack'; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); display: none;}
 .contactMe_tootip::after{content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #ffffff transparent;}
 .play{cursor: pointer;}
 
-/* #scorllDownBox{width: calc(100% - 100px); height: auto; margin-top: 180px;} */
+#scorllDownBox{width: calc(100% - 100px); height: auto; margin-top: 180px;}
 
-#scorllDownBox{width: 100%; height: auto; margin-top: 180px;}
 #scorllDownBox>p{font-size: 12px; text-align: center; font-weight: bold; color: #ffffff;}
 .scrollDown{width: 20px; height: 26px; border: 3px solid #ffffff; border-radius: 60px; position: relative; margin: 15px auto 0;}
 .scrollDown::before{content: ''; width: 4px; height: 4px; position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background-color: #ffffff; border-radius: 50%; opacity: 1; animation: point 2s infinite; -webkit-animation: point 2s infinite;}
 @keyframes point{to{opacity: 0; top: 15px;}}
 @-webkit-keyframes point{to{opacity: 0; top: 15px;}}
 
-/* #aboutMeBox{width: calc(100% - 100px); height: 937px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;} */
+#aboutMeBox{width: calc(100% - 100px); height: 937px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
 
-#aboutMeBox{width: 100%; height: 937px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
 #aboutMeBox>.contentBox{position: relative;}
 .portfolio_text{transform: translateY(100px); transition: all 1s; opacity: 0;}
 .aboutMe_Left{width: 20%; height: 787px; float: left; padding: 70px 100px; transform: translateY(100px); transition: all 1s; opacity: 0;}
-.starlight{position: absolute; filter: drop-shadow(0px 5px 10px rgba(148,187,233,1)); transform: translateY(100px); transition: all 1s; opacity: 0; top: -100px;}
+.starlight{position: absolute; filter: drop-shadow(0px 5px 10px rgba(148,187,233,1)); transform: translateY(100px); transition: all 1s; opacity: 0; top: -130px; animation: starlight 2s ease-in-out infinite;}
+@keyframes starlight{0% {top: -130px;} 50% {top: -133px;} 100%{top: -130px}}
+
 .star{position: absolute; top: 700px; left: -100px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+
 .aboutMe_Right{width: 80%; height: 787px; position: absolute; right: 0; z-index: 3; padding: 50px;}
-.bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px;margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .bubble:after{content: ""; position: absolute; bottom: 66%; left: -3.7%; margin-left: 2px; border-width: 15px; border-style: solid; border-color: transparent #ffffff transparent transparent;}
+
 .bubbleLeft{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
 .bubbleRight{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
-.company1, .company2{transform: translateY(100px); transition: all 1s; opacity: 0;}
-.school, .prize{transform: translateY(100px); transition: all 1s; opacity: 0;}
+.company1, .company2{transform: translateY(50px); transition: all 1s; opacity: 0;}
+.school, .prize{transform: translateY(50px); transition: all 1s; opacity: 0;}
 
 .company1, .company2 p{font-size: 13px;}
 .school, .prize p{font-size: 13px;}
 
-.bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); padding: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .bubble2Left{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
 .bubble2Right{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
 .whale{top: 300px; left: 400px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
 
-/* #portfolioBox{width: calc(100% - 100px); height: 937px; float: right; transition: all 1s;} */
 
 /*포트폴리오 박스*/
-#portfolioBox{width: 100%; height: 937px; float: right; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); position: relative;}
+#portfolioBox{width: calc(100% - 100px); height: 937px; float: right; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); position: relative;}
 .portfolio{width: 100%; height: 700px; background-color: #ffffff; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); margin-top: 50px;}
 
 /*포트폴리오 하단 버튼*/
-button{height: 35px; background: #1AAB8A; color: #ffffff; border: none; position: relative; font-size: 13px; padding: 10px; cursor: pointer; transition: 800ms ease all; outline: none; margin: 20px 20px 0px 0px;}
-button:hover{background:#fff; color:#1AAB8A;}
-button:before, button:after{content:''; position: absolute; top:0; right:0; width:0px; height:2px; background: #1AAB8A; transition: 400ms ease all;}
+button{height: 35px; background: black; color: #ffffff; border: none; position: relative; font-size: 13px; padding: 10px; cursor: pointer; transition: 800ms ease all; outline: none; margin: 20px 20px 0px 0px;}
+button:hover{background:#fff; color: black;}
+button:before, button:after{content:''; position: absolute; top:0; right:0; width:0px; height:2px; background: black; transition: 400ms ease all;}
 button:after{right: inherit; top: inherit; left: 0; bottom: 0;}
 button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 
@@ -125,10 +135,10 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .Portfolio_Box{width: 95%; height: 700px; margin-top: 50px;}
 
 /*포트폴리오 페이드인*/
-.rightBox{animation: fade 0.5s linear forwards;}
-@keyframes fade {from {opacity: 0} to {opacity: 1}}
+.rightBox{animation: fade 0.8s cubic-bezier(1,.04,.74,1) forwards;}
+@keyframes fade {from {opacity: 0; transform: translateY(-150px)} to {opacity: 1; transform: translateY(0px)}}
 
-.leftBox{animation: garo 0.5s linear forwards; transition: all 1s;}
+.leftBox{animation: garo 1s ease forwards;}
 @keyframes garo {from {width: 0px} to {width: 200px}}
 
 /*포트폴리오 버튼*/
@@ -157,6 +167,7 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 /*칵테일 포트폴리오*/
 .cocktail_left{width: 60%; height: 100%; position: relative; float: left;}
 .cocktailLeft{width: 200px; height: 100%; background-color: #f691a3; position: absolute;}
+.cocktailLeft::before{content: ""; width: 200px; height: 100%; background-color: gold; position: absolute; z-index: -1;}
 
 .cocktail{transition: all 10s linear; transform: translateX(0px);}
 
@@ -172,6 +183,7 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 /*WWF 포트폴리오*/
 .WWF_left{width: 60%; height: 100%; position: relative; float: left;}
 .WWFLeft{width: 200px; height: 100%; background-color: cornflowerblue; position: absolute;}
+.WWFLeft::before{content: ""; width: 200px; height: 100%; background-color: #f691a3; position: absolute; z-index: -1;}
 
 .WWF{transition: all 8s linear; transform: translateY(0px);}
 .WWFsubPC{transition: all 3s linear; transform: translateY(0px); display: none;}
@@ -202,6 +214,7 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 /*만개의레시피 포트폴리오*/
 .tenThousand_left{width: 60%; height: 100%; position: relative; float: left;}
 .tenThousandLeft{width: 200px; height: 100%; background-color: #74b243; position: absolute;}
+.tenThousandLeft::before{content: ""; width: 200px; height: 100%; background-color: cornflowerblue; position: absolute; z-index: -1;}
 
 .recipe{transition: all 5s linear; transform: translateY(0px);}
 .recipeSub{transition: all 4s linear; transform: translateY(0px);}
@@ -231,8 +244,9 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 /*경복궁 포트폴리오*/
 .korea_left{width: 60%; height: 100%; position: relative; float: left;}
 .koreaLeft{width: 200px; height: 100%; background-color: #1e3361; position: absolute;}
+.koreaLeft::before{content: ""; width: 200px; height: 100%; background-color: #74b243; position: absolute; z-index: -1;}
 
-.korea{transition: all 10s linear; transform: translateY(0px);}
+.korea{transition: all 8s linear; transform: translateY(0px);}
 
 .korea_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
@@ -246,6 +260,7 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 /*조말론 포트폴리오*/
 .perfume_left{width: 60%; height: 100%; position: relative; float: left;}
 .perfumeLeft{width: 200px; height: 100%; background-color: #66c394; position: absolute;}
+.perfumeLeft::before{content: ""; width: 200px; height: 100%; background-color: #1e3361; position: absolute; z-index: -1;}
 
 .perfume{transition: all 2.5s linear; transform: translateY(0px);}
 .perfumeSub{transition: all 8s linear; transform: translateY(0px);}
@@ -258,3 +273,6 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
 .mainPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 355px; cursor: pointer; display: none;}
 .perfume_Monitor{width: 441px; height: 248px; position: absolute; top: 177px; left: 178px; overflow: hidden; cursor: move;}
+
+
+#information{width: calc(100% - 100px); height: 800px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}

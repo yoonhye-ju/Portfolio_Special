@@ -157,6 +157,14 @@ $(function(){
     $('.mainPage').hide();
   });
 
+//경복궁
+$('.korea_Monitor').mouseover(function(){
+  $('.korea').css('transform','translateY(-1160px)')
+});
+$('.korea_Monitor').mouseout(function(){
+  $('.korea').css('transform','translateY(0px)')
+});
+
   //조말론
   $('.perfume_Monitor').mouseover(function () {
     $('.perfume').css('transform', 'translateY(-468px)')
