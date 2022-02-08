@@ -45,6 +45,15 @@ $(window).scroll(function () {
   else {
     $('.whale').css("transform", "translateY(0px)").css("opacity", "0");
   }
+  if (wb > 1200) {
+    $('.stars').css("transform", "translateY(0px)").css("opacity", "0.8");
+  }
+  else {
+    $('.stars').css("transform", "translateY(0px)").css("opacity", "0");
+  }
+    if (wb > 1200) {
+    $('.stars').css("transform", "translateY(0px)").css("opacity", "0.8");
+  }
   if ( wb > 1845){
     $('.people').attr('src', 'img/header_people_line.png');
   }
@@ -62,5 +71,8 @@ $(window).scroll(function () {
   }
   else {
     $('.letter').attr('src', 'img/header_letter_line.png');
+  }
+  if (wb > 2420) {
+    $('.starLight').css("transform", "translateY(0px)").css("opacity", "1");
   }
 });

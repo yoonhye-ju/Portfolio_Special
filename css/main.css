@@ -3,6 +3,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 li, ul, ol{list-style: none;}
 a:link, a:visited, a:hover{text-decoration: none; color: inherit;}
+html {scroll-behavior: smooth;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto;}
 
@@ -17,53 +18,71 @@ ul li{padding-top: 30px;}
 #particlesjs{position: absolute; width: 100%; height: 100%;}
 #particles_js{position: absolute; width: 100%; height: 100%;}
 
-.portfolio_text,.portfolio_text1{width: 100%; height: 150px; padding: 100px 0 0 100px; font-family: 'Comfortaa', cursive; font-weight: bold; font-size: 45px;}
+.portfolio_text,.portfolio_text1{width: 100%; height: 150px; padding: 100px 0 0 100px; font-family: 'Comfortaa', cursive; font-weight: bold; font-size: 45px; color: #4A374F;}
 
 #top{width: calc(100% - 100px); height: 937px; background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
 
 #profileBox{width: 100%; height: 100%; margin: 0 auto; position: relative;}
-.cellphone{position: absolute; top: 90px; left: 396px; filter: drop-shadow(0px 0px 10px rgba(238,174,202));}
+.cellphone{position: absolute; top: 90px; left: 396px; filter: drop-shadow(0px 0px 7px rgb(241, 149, 189, 0.8));}
 .profile{width: 30%; height: 100%; display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding-top: 200px; overflow: hidden;}
 .me{margin-bottom: 20%; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
-.planet{position: absolute; right: 100px; opacity: 1; filter: drop-shadow(0px 5px 10px rgba(148,187,233,1)); animation: planet 2s ease-in-out infinite;}
+.planet{position: absolute; right: 100px; opacity: 1; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250)); animation: planet 2s ease-in-out infinite;}
 @keyframes planet{0% {top: 353px;} 50% {top: 350px;} 100%{top: 353px}}
 
-.moon{width: 100px; position: absolute; left: 100px; opacity: 1; filter: drop-shadow(0px 5px 10px rgba(208,179,212,1)); animation: moon 2s ease-in-out infinite;}
-@keyframes moon{0% {top: 100px;} 50% {top: 105px;} 100%{top: 100px}}
+.moon{width: 130px; position: absolute; left: 100px; opacity: 1; filter: drop-shadow(0px 0px 10px rgb(241, 149, 189, 0.8)); animation: moon 2s ease-in-out infinite;}
+@keyframes moon{0% {top: 90px;} 50% {top: 95px;} 100%{top: 90px}}
 
+
+/*디자인 툴*/
 #programBox{width: 1440px; height: 100px; margin: 10px auto; float: right;}
 .IM1{display: inline-block; margin: 0 0 30px 90px; color: #666;}
 .IM2{display: inline-block; margin: 0 0 30px 110px; color: #666;}
 .IM3{display: inline-block; margin: 0 0 30px 95px; color: #666;}
 .IM4{display: inline-block; margin: 0 0 30px 100px; color: #666;}
 
+/*포토샵*/
 #myJobBox_01{width: 360px; height: 100%; float: left;  padding: 10px;}
 .photoshopBox{display: flex; align-items: center;}
 .photoshopBar{width:100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
-.photoshopBar::before{content: ''; height: 8px; border-radius: 15px; background-color: #0f2ec4; position: absolute; animation: photoshop 0.8s linear forwards; animation-delay: 0s;}
+/*포토샵 미터기*/
+.photoshopBar::before{content: ''; height: 8px; border-radius: 15px; background-color: #0f2ec4; position: absolute; animation: photoshop 0.8s linear forwards;}
+/*포토샵 미터기 애니메이션*/
 @keyframes photoshop{to{width: 95%;}
 from{width: 0%;}}
 
+
+/*일러스트레이터*/
 #myJobBox_02{width: 360px; height: 100%; float: left; padding: 10px;}
 .illustrationBox{display: flex; align-items: center;}
 .illustrationBar{width: 100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
-.illustrationBar::before{content: ''; height: 8px; border-radius: 15px; background-color: #ffa41e; position: absolute; animation: illust 0.8s linear forwards; animation-delay: 3s;}
+/*일러스트 미터기*/
+.illustrationBar::before{content: ''; height: 8px; border-radius: 15px; background-color: #ffa41e; position: absolute; animation: illust 0.8s linear forwards;}
+/*일러스트레이터 미터기 애니메이션*/
 @keyframes illust{to{width: 95%;}
 from{width: 0%;}}
 
+
+/*인디자인*/
 #myJobBox_03{width: 360px; height: 100%; float: left;  padding: 10px;}
 .indesignBox{display: flex; align-items: center;}
 .indesignBar{width:100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
-.indesignBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: #fe5da3; position: absolute; animation: indesign 0.8s linear forwards; animation-delay: 6s;}
+/*인디자인 미터기*/
+.indesignBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: #fe5da3; position: absolute; animation: indesign 0.8s linear forwards;}
+/*인디자인 미터기 애니메이션*/
 @keyframes indesign{to{width: 80%;}
 from{width: 0%;}}
 
+
+/*UXUI*/
 #myJobBox_04{width: 360px; height: 100%; float: left; padding: 10px;}
 .uxuiBox{display: flex; align-items: center;}
 .uxuiBar{width:100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
-.uxuiBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: rgb(108, 85, 241); position: absolute; animation: uxui 0.8s linear forwards; animation-delay: 9s;}
-@keyframes uxui{to{width: 85%;}
-from{width: 0%;}}
+/*UXUI 미터기*/
+.uxuiBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: rgb(108, 85, 241); position: absolute; animation: uxui 0.8s linear forwards;}
+/*UXUI 미터기 애니메이션*/
+@keyframes uxui{from{width: 0%;}
+to{width: 85%;}}
+
 
 .program{display: inline-block; font-size: 14px;}
 .meterbar{float: right; font-size: 14px;}
@@ -92,10 +111,14 @@ from{transform: scale(1.0);}}
 #aboutMeBox>.contentBox{position: relative;}
 .portfolio_text{transform: translateY(100px); transition: all 1s; opacity: 0;}
 .aboutMe_Left{width: 20%; height: 787px; float: left; padding: 70px 100px; transform: translateY(100px); transition: all 1s; opacity: 0;}
-.starlight{position: absolute; filter: drop-shadow(0px 5px 10px rgba(148,187,233,1)); transform: translateY(100px); transition: all 1s; opacity: 0; top: -130px; animation: starlight 2s ease-in-out infinite;}
+.starlight{width: 100px; position: absolute; filter: drop-shadow(0px 0px 8px rgb(113, 175, 245)); transform: translateY(100px); transition: all 1s; opacity: 0; top: -130px; animation: starlight 2s ease-in-out infinite;}
 @keyframes starlight{0% {top: -130px;} 50% {top: -133px;} 100%{top: -130px}}
 
 .star{position: absolute; top: 700px; left: -100px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+
+.stars{width: 200px; top: -50px; right: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(238,174,202)); transform: translateY(300px); transition: all 1s; opacity: 0;}
+
+.starStar{width: 130px; bottom: -10px; left: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(148,187,233));}
 
 .aboutMe_Right{width: 80%; height: 787px; position: absolute; right: 0; z-index: 3; padding: 50px;}
 .bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
@@ -272,7 +295,10 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
 .subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
 .mainPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 355px; cursor: pointer; display: none;}
-.perfume_Monitor{width: 441px; height: 248px; position: absolute; top: 177px; left: 178px; overflow: hidden; cursor: move;}
+.perfume_Monitor{width: 441px; height: 249px; position: absolute; top: 177px; left: 178px; overflow: hidden; cursor: move;}
 
 
 #information{width: calc(100% - 100px); height: 800px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
+
+.starLight{width: 150px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(238,174,202,1)); transform: translateY(100px); transition: all 1s; opacity: 0; right: 50px; animation: starLight 2s ease-in-out infinite;}
+@keyframes starLight{0% {top: 400px;} 50% {top: 403px;} 100%{top: 400px}}
