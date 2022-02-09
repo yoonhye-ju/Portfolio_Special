@@ -12,13 +12,13 @@ function next() {
   });
 }
 
-// function slide() {
-//   $('#programBox').stop().animate({ marginLeft: -360 }, function () {
-//     $('.slide:first').appendTo('#programBox');
-//     $('#programBox').css({ marginLeft: 0 });
-//   });
-// }
-// setInterval(slide, 3000);
+function slide() {
+  $('#programBox').stop().animate({ marginLeft: -360 }, function () {
+    $('.slide:first').appendTo('#programBox');
+    $('#programBox').css({ marginLeft: 0 });
+  });
+}
+setInterval(slide, 3000);
 
   $('.prev').click(function () {
     prev();
@@ -27,5 +27,6 @@ function next() {
     next();
   });
 });
+
 
 

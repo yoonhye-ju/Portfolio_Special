@@ -24,3 +24,7 @@ $(function(){
     $('.home').attr('src', 'img/header_home_line.png');
   });
 });
+
+window.onload = function(){
+ $('.home').attr('src', 'img/header_home.png');
+};

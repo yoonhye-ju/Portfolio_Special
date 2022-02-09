@@ -1,7 +1,7 @@
 $(function(){
     //온라인서점
     $('.library_Monitor').mouseover(function(){
-      $('.library').css('transform','translateY(-1215px)')
+      $('.library').css('transform','translateY(-1230px)')
     });
     $('.library_Monitor').mouseout(function(){
       $('.library').css('transform','translateY(0px)')

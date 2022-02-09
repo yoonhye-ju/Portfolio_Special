@@ -4,7 +4,7 @@
 li, ul, ol{list-style: none;}
 a:link, a:visited, a:hover{text-decoration: none; color: inherit;}
 html {scroll-behavior: smooth;}
-body{font-family: 'Noto Sans KR', sans-serif;}
+body{font-family: 'Noto Sans KR', sans-serif; color: #4A374F;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto;}
 
 header{width: 100px; height: 100vh; position: fixed; background-color: rgba(238,174,202,1); filter: drop-shadow(0px 0px 4px rgb(87, 119, 228)); z-index: 1;}
@@ -45,7 +45,7 @@ ul li{padding-top: 30px;}
 .photoshopBox{display: flex; align-items: center;}
 .photoshopBar{width:100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
 /*포토샵 미터기*/
-.photoshopBar::before{content: ''; height: 8px; border-radius: 15px; background-color: #0f2ec4; position: absolute; animation: photoshop 0.8s linear forwards;}
+.photoshopBar::before{content: ''; height: 8px; border-radius: 15px; background-color: #0f2ec4; position: absolute; animation: photoshop 1s linear forwards;}
 /*포토샵 미터기 애니메이션*/
 @keyframes photoshop{to{width: 95%;}
 from{width: 0%;}}
@@ -56,10 +56,9 @@ from{width: 0%;}}
 .illustrationBox{display: flex; align-items: center;}
 .illustrationBar{width: 100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
 /*일러스트 미터기*/
-.illustrationBar::before{content: ''; height: 8px; border-radius: 15px; background-color: #ffa41e; position: absolute; animation: illust 0.8s linear forwards;}
+.illustrationBar::after{content: ''; width: 0px; height: 8px; border-radius: 15px; background-color: #ffa41e; position: absolute; animation: illust 1s linear forwards;}
 /*일러스트레이터 미터기 애니메이션*/
-@keyframes illust{to{width: 95%;}
-from{width: 0%;}}
+@keyframes illust{from{width: 0%;} to{width: 95%;}}
 
 
 /*인디자인*/
@@ -67,7 +66,7 @@ from{width: 0%;}}
 .indesignBox{display: flex; align-items: center;}
 .indesignBar{width:100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
 /*인디자인 미터기*/
-.indesignBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: #fe5da3; position: absolute; animation: indesign 0.8s linear forwards;}
+.indesignBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: #fe5da3; position: absolute; animation: indesign 1s linear forwards;}
 /*인디자인 미터기 애니메이션*/
 @keyframes indesign{to{width: 80%;}
 from{width: 0%;}}
@@ -78,7 +77,7 @@ from{width: 0%;}}
 .uxuiBox{display: flex; align-items: center;}
 .uxuiBar{width:100%; height: 8px; border-radius: 15px; background-color: #ffffff; position: relative; margin: 10px;}
 /*UXUI 미터기*/
-.uxuiBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: rgb(108, 85, 241); position: absolute; animation: uxui 0.8s linear forwards;}
+.uxuiBar::before{content: ''; width: 0%; height: 8px; border-radius: 15px; background-color: rgb(108, 85, 241); position: absolute; animation: uxui 1s linear forwards;}
 /*UXUI 미터기 애니메이션*/
 @keyframes uxui{from{width: 0%;}
 to{width: 85%;}}
@@ -89,12 +88,12 @@ to{width: 85%;}}
 
 #contact{width: calc(100% - 100px); height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;}
 
-.contactMe{cursor: pointer; margin: 0 auto; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+.contactMe{cursor: pointer; margin: 0 auto; filter: drop-shadow(0px 0px 5px rgb(241, 149, 189, 0.8));}
 .contactMe:hover{animation-name: contact; animation-duration: 0.3s;}
 @keyframes contact{to{transform: scale(0.9);}
 from{transform: scale(1.0);}}
 
-.contactMe_tootip{width: auto; background-color: #ffffff; color: black; text-align: center; border-radius: 30px; padding: 10px; position: absolute; z-index: 1; top: 55%; left: 47%; margin: 40px 0 0 -53px; font-size: 12px; font-family: 'Short Stack'; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); display: none;}
+.contactMe_tootip{width: auto; background-color: #ffffff; text-align: center; border-radius: 30px; padding: 10px; position: absolute; z-index: 1; top: 55%; left: 47%; margin: 40px 0 0 -53px; font-size: 12px; font-family: 'Short Stack'; box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2); display: none;}
 .contactMe_tootip::after{content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #ffffff transparent;}
 .play{cursor: pointer;}
 
@@ -156,6 +155,9 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 
 /*포트폴리오 공통*/
 .Portfolio_Box{width: 95%; height: 700px; margin-top: 50px;}
+.Portfolio_Box h5{color: black;}
+.Portfolio_Box h1{color: black;}
+.Portfolio_Box p{color: #666; font-size: 15px;}
 
 /*포트폴리오 페이드인*/
 .rightBox{animation: fade 0.8s cubic-bezier(1,.04,.74,1) forwards;}
@@ -298,7 +300,27 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 .perfume_Monitor{width: 441px; height: 249px; position: absolute; top: 177px; left: 178px; overflow: hidden; cursor: move;}
 
 
-#information{width: calc(100% - 100px); height: 800px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
+#information{width: calc(100% - 100px); height: 630px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
+
+.mailBox{width: 85%; height: 350px; position: relative; z-index: 3; background-color: #4A374F;margin: 50px 0 0 100px;}
+.mailBox_left{width: 50%; height: 100%; background-color: #00C73C; float: left;}
+.mailBox_right{width: 50%; height: 100%; background-color: #1e3361; float: right; display: flex; flex-direction: column; justify-content: space-around;}
+
+/*지메일*/
+.gmailBox{width: 65px; height: 65px; border-radius: 50px; background-color: #ED5454; text-align: center; padding-top: 10px; cursor: pointer; position: relative;}
+.gmail{position: absolute; right: 12px;}
+
+/*카카오*/
+.kakaoBox{width: 65px; height: 65px; border-radius: 50px; background-color: #FFE812; text-align: center; padding-top: 13px; cursor: pointer;}
+
+/*네이버*/
+.naverBox{width: 65px; height: 65px; border-radius: 50px; background-color: #00C73C; text-align: center; padding-top: 18px; cursor: pointer;}
+
+/*핸드폰*/
+.phoneBox{width: 65px; height: 65px; border-radius: 50px; background-color: #47C5FC; text-align: center; padding-top: 14px; cursor: pointer;}
+
+.info{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px;}
+
 
 .starLight{width: 150px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(238,174,202,1)); transform: translateY(100px); transition: all 1s; opacity: 0; right: 50px; animation: starLight 2s ease-in-out infinite;}
 @keyframes starLight{0% {top: 400px;} 50% {top: 403px;} 100%{top: 400px}}
