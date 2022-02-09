@@ -26,10 +26,13 @@ ul li{padding-top: 30px;}
 .cellphone{position: absolute; top: 90px; left: 396px; filter: drop-shadow(0px 0px 7px rgb(241, 149, 189, 0.8));}
 .profile{width: 30%; height: 100%; display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding-top: 200px; overflow: hidden;}
 .me{margin-bottom: 20%; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+
 .planet{position: absolute; right: 150px; opacity: 1; filter: drop-shadow(0px 0px 5px rgb(241, 149, 189, 0.8)); animation: planet 2s ease-in-out infinite;}
 @keyframes planet{0% {top: 253px;} 50% {top: 250px;} 100%{top: 253px}}
-.planetA{position: absolute; top: 650px; right: 300px; animation: rotate 15s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9));}
+.planetA{width: 150px; position: absolute; top: 650px; right: 200px; animation: rotate 15s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9));}
 @keyframes rotate{from {transform: rotate(0deg)} to{transform: rotate(360deg)};}
+.planetB{position: absolute; top: 450px; left: 200px; animation: rotate 20s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9));}
+@keyframes rotate{from {transform: rotate(360deg)} to{transform: rotate(0deg)};}
 
 .moon{width: 130px; position: absolute; left: 100px; opacity: 1; filter: drop-shadow(0px 0px 10px rgb(241, 149, 189, 0.8)); animation: moon 2s ease-in-out infinite;}
 @keyframes moon{0% {top: 90px;} 50% {top: 95px;} 100%{top: 90px}}
@@ -145,7 +148,7 @@ from{transform: scale(1.0);}}
 .portfolio{width: 100%; height: 700px; background-color: #ffffff; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); margin-top: 50px;}
 
 /*포트폴리오 하단 버튼*/
-.btn{height: 35px; background: black; color: #ffffff; border: none; position: relative; font-size: 13px; padding: 10px; cursor: pointer; transition: 800ms ease all; outline: none; margin: 30px 20px 0px 0px; display: inline-block; line-height: 1;}
+.btn{height: 35px; background: black; color: #ffffff; border: none; position: relative; font-size: 13px; padding: 10px; cursor: pointer; transition: 800ms ease all; outline: none; margin: 25px 20px 0px 0px; display: inline-block; line-height: 1;}
 .btn:hover{background:#fff; color: black;}
 .btn:before, .btn:after{content:''; position: absolute; top:0; right:0; width:0px; height:2px; background: black; transition: 400ms ease all;}
 .btn:after{right: inherit; top: inherit; left: 0; bottom: 0;}
