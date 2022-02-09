@@ -2,7 +2,7 @@
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 li, ul, ol{list-style: none;}
-a:link, a:visited, a:hover{text-decoration: none; color: inherit;}
+a:link, a:visited, a:hover{text-decoration: none; color: #ffffff;}
 html {scroll-behavior: smooth;}
 body{font-family: 'Noto Sans KR', sans-serif; color: #4A374F;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto;}
@@ -26,8 +26,10 @@ ul li{padding-top: 30px;}
 .cellphone{position: absolute; top: 90px; left: 396px; filter: drop-shadow(0px 0px 7px rgb(241, 149, 189, 0.8));}
 .profile{width: 30%; height: 100%; display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding-top: 200px; overflow: hidden;}
 .me{margin-bottom: 20%; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
-.planet{position: absolute; right: 100px; opacity: 1; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250)); animation: planet 2s ease-in-out infinite;}
-@keyframes planet{0% {top: 353px;} 50% {top: 350px;} 100%{top: 353px}}
+.planet{position: absolute; right: 150px; opacity: 1; filter: drop-shadow(0px 0px 5px rgb(241, 149, 189, 0.8)); animation: planet 2s ease-in-out infinite;}
+@keyframes planet{0% {top: 253px;} 50% {top: 250px;} 100%{top: 253px}}
+.planetA{position: absolute; top: 650px; right: 300px; animation: rotate 15s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9));}
+@keyframes rotate{from {transform: rotate(0deg)} to{transform: rotate(360deg)};}
 
 .moon{width: 130px; position: absolute; left: 100px; opacity: 1; filter: drop-shadow(0px 0px 10px rgb(241, 149, 189, 0.8)); animation: moon 2s ease-in-out infinite;}
 @keyframes moon{0% {top: 90px;} 50% {top: 95px;} 100%{top: 90px}}
@@ -143,11 +145,11 @@ from{transform: scale(1.0);}}
 .portfolio{width: 100%; height: 700px; background-color: #ffffff; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); margin-top: 50px;}
 
 /*포트폴리오 하단 버튼*/
-button{height: 35px; background: black; color: #ffffff; border: none; position: relative; font-size: 13px; padding: 10px; cursor: pointer; transition: 800ms ease all; outline: none; margin: 20px 20px 0px 0px;}
-button:hover{background:#fff; color: black;}
-button:before, button:after{content:''; position: absolute; top:0; right:0; width:0px; height:2px; background: black; transition: 400ms ease all;}
-button:after{right: inherit; top: inherit; left: 0; bottom: 0;}
-button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
+.btn{height: 35px; background: black; color: #ffffff; border: none; position: relative; font-size: 13px; padding: 10px; cursor: pointer; transition: 800ms ease all; outline: none; margin: 30px 20px 0px 0px; display: inline-block; line-height: 1;}
+.btn:hover{background:#fff; color: black;}
+.btn:before, .btn:after{content:''; position: absolute; top:0; right:0; width:0px; height:2px; background: black; transition: 400ms ease all;}
+.btn:after{right: inherit; top: inherit; left: 0; bottom: 0;}
+.btn:hover:before, .btn:hover:after{width:100%; transition: 800ms ease all;}
 
 /*오른쪽 버튼*/
 .dotBox{width: 5%; height: 700px; float: right; display: flex; flex-flow: column; align-items: center; justify-content: center;}
