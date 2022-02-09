@@ -117,7 +117,8 @@ from{transform: scale(1.0);}}
 
 .stars{width: 200px; top: -50px; right: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(238,174,202)); transform: translateY(300px); transition: all 1s; opacity: 0;}
 
-.starStar{width: 130px; bottom: -10px; left: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(148,187,233));}
+.starStar{width: 110px; bottom: 10px; left: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(148,187,233)); animation: starStar 2s ease-in-out infinite; transform: rotate(105deg);}
+@keyframes starStar{0% {top: 800px;} 50% {top: 797px;} 100%{top: 800px};}
 
 .aboutMe_Right{width: 80%; height: 787px; position: absolute; right: 0; z-index: 3; padding: 50px;}
 .bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
@@ -302,25 +303,31 @@ button:hover:before, button:hover:after{width:100%; transition: 800ms ease all;}
 
 #information{width: calc(100% - 100px); height: 630px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
 
-.mailBox{width: 85%; height: 350px; position: relative; z-index: 3; background-color: #4A374F;margin: 50px 0 0 100px;}
-.mailBox_left{width: 50%; height: 100%; background-color: #00C73C; float: left;}
-.mailBox_right{width: 50%; height: 100%; background-color: #1e3361; float: right; display: flex; flex-direction: column; justify-content: space-around;}
+#information>.contentBox{padding-top: 80px;}
+
+.portfolio_text2{width: 100%; height: 150px; padding: 100px 0 0 100px; font-family: 'Comfortaa', cursive; font-weight: bold; font-size: 45px; color: #4A374F; transform: translateY(100px); transition: all 1s; opacity: 0;}
+
+.mailBox{width: 90%; height: 150px; position: relative; z-index: 3; margin-top: 100px; display: flex; flex-direction: row; justify-content: space-around;}
 
 /*지메일*/
-.gmailBox{width: 65px; height: 65px; border-radius: 50px; background-color: #ED5454; text-align: center; padding-top: 10px; cursor: pointer; position: relative;}
+.gmailBox{width: 65px; height: 65px; border-radius: 50px; background-color: #ED5454; text-align: center; padding-top: 10px; cursor: pointer; position: relative; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .gmail{position: absolute; right: 12px;}
+.gmail_ID{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px;}
 
 /*카카오*/
-.kakaoBox{width: 65px; height: 65px; border-radius: 50px; background-color: #FFE812; text-align: center; padding-top: 13px; cursor: pointer;}
+.kakaoBox{width: 65px; height: 65px; border-radius: 50px; background-color: #FFE812; text-align: center; padding-top: 13px; cursor: pointer; position: relative; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.kakao{position: absolute; right: 12px;}
+.kakao_ID{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px;}
 
 /*네이버*/
-.naverBox{width: 65px; height: 65px; border-radius: 50px; background-color: #00C73C; text-align: center; padding-top: 18px; cursor: pointer;}
+.naverBox{width: 65px; height: 65px; border-radius: 50px; background-color: #00C73C; text-align: center; padding-top: 18px; cursor: pointer; position: relative; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.naver{position: absolute; right: 17px;}
+.naver_ID{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px;}
 
 /*핸드폰*/
-.phoneBox{width: 65px; height: 65px; border-radius: 50px; background-color: #47C5FC; text-align: center; padding-top: 14px; cursor: pointer;}
+.phoneBox{width: 65px; height: 65px; border-radius: 50px; background-color: #47C5FC; text-align: center; padding-top: 14px; cursor: pointer; position: relative; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.phone{position: absolute; right: 22px;}
+.phoneNumber{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px; width: 100px;}
 
-.info{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px;}
-
-
-.starLight{width: 150px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(238,174,202,1)); transform: translateY(100px); transition: all 1s; opacity: 0; right: 50px; animation: starLight 2s ease-in-out infinite;}
-@keyframes starLight{0% {top: 400px;} 50% {top: 403px;} 100%{top: 400px}}
+.starLight{width: 150px; position: absolute; transform: translateY(100px); transition: all 1s; right: 300px; animation: starLight 2s ease-in-out infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .5));}
+@keyframes starLight{0% {top: 100px;} 50% {top: 105px;} 100%{top: 100px}}
