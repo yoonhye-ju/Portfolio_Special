@@ -25,17 +25,17 @@ ul li{padding-top: 30px;}
 #profileBox{width: 100%; height: 100%; margin: 0 auto; position: relative;}
 .cellphone{position: absolute; top: 90px; left: 396px; filter: drop-shadow(0px 0px 7px rgb(241, 149, 189, 0.8));}
 .profile{width: 30%; height: 100%; display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding-top: 200px; overflow: hidden;}
-.me{margin-bottom: 20%; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+.me{margin-bottom: 20%; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1))}
 
 .planet{position: absolute; right: 150px; opacity: 1; filter: drop-shadow(0px 0px 5px rgb(241, 149, 189, 0.8)); animation: planet 2s ease-in-out infinite;}
-@keyframes planet{0% {top: 253px;} 50% {top: 250px;} 100%{top: 253px}}
-.planetA{width: 150px; position: absolute; top: 650px; right: 200px; animation: rotate 15s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9));}
-@keyframes rotate{from {transform: rotate(0deg)} to{transform: rotate(360deg)};}
-.planetB{position: absolute; top: 450px; left: 200px; animation: rotate 20s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9));}
-@keyframes rotate{from {transform: rotate(360deg)} to{transform: rotate(0deg)};}
+@keyframes planet{0% {top: 253px;} 50% {top: 250px;} 100%{top: 253px;}}
+.planetA{width: 150px; position: absolute; top: 650px; right: 200px; animation: rotate 15s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9))}
+@keyframes rotate{from {transform: rotate(0deg)} to{transform: rotate(360deg)}}
+.planetB{position: absolute; top: 450px; left: 200px; animation: rotate 20s linear infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .9))}
+@keyframes rotate{from {transform: rotate(360deg)} to{transform: rotate(0deg)}}
 
 .moon{width: 130px; position: absolute; left: 100px; opacity: 1; filter: drop-shadow(0px 0px 10px rgb(241, 149, 189, 0.8)); animation: moon 2s ease-in-out infinite;}
-@keyframes moon{0% {top: 90px;} 50% {top: 95px;} 100%{top: 90px}}
+@keyframes moon{0% {top: 90px;} 50% {top: 95px;} 100%{top: 90px;}}
 
 
 /*디자인 툴*/
@@ -116,30 +116,35 @@ from{transform: scale(1.0);}}
 .portfolio_text{transform: translateY(100px); transition: all 1s; opacity: 0;}
 .aboutMe_Left{width: 20%; height: 787px; float: left; padding: 70px 100px; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .starlight{width: 100px; position: absolute; filter: drop-shadow(0px 0px 8px rgb(113, 175, 245)); transform: translateY(100px); transition: all 1s; opacity: 0; top: -130px; animation: starlight 2s ease-in-out infinite;}
-@keyframes starlight{0% {top: -130px;} 50% {top: -133px;} 100%{top: -130px}}
+@keyframes starlight{0% {top: -130px;} 50% {top: -133px;} 100%{top: -130px;}}
 
 .star{position: absolute; top: 700px; left: -100px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
 
 .stars{width: 200px; top: -50px; right: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(238,174,202)); transform: translateY(300px); transition: all 1s; opacity: 0;}
 
 .starStar{width: 110px; bottom: 10px; left: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(148,187,233)); animation: starStar 2s ease-in-out infinite; transform: rotate(105deg);}
-@keyframes starStar{0% {top: 800px;} 50% {top: 797px;} 100%{top: 800px};}
+@keyframes starStar{0% {top: 800px;} 50% {top: 797px;} 100%{top: 800px;}}
 
 .aboutMe_Right{width: 80%; height: 787px; position: absolute; right: 0; z-index: 3; padding: 50px;}
 .bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .bubble:after{content: ""; position: absolute; bottom: 66%; left: -3.7%; margin-left: 2px; border-width: 15px; border-style: solid; border-color: transparent #ffffff transparent transparent;}
 
-.bubbleLeft{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
-.bubbleRight{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
-.company1, .company2{transform: translateY(50px); transition: all 1s; opacity: 0;}
-.school, .prize{transform: translateY(50px); transition: all 1s; opacity: 0;}
+.bubbleLeft{width: 55%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
+.bubbleLeft>h3{margin-bottom: 8px;}
+.bubbleLeft p{font-size: 15px; line-height: 25px;}
+.bubbleRight{width: 45%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around; padding-left: 20px;}
+.company1, .company2{transform: translateY(50px); transition: all 1s; opacity: 0; margin-bottom: 15px;}
+.school, .prize{transform: translateY(50px); transition: all 1s; opacity: 0; margin-bottom: 15px;}
 
 .company1, .company2 p{font-size: 13px;}
 .school, .prize p{font-size: 13px;}
+.during{font-weight: bold; margin-bottom: 5px;}
 
 .bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
-.bubble2Left{width: 50%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
-.bubble2Right{width: 50%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around;}
+.bubble2Left{width: 55%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
+.bubble2Left>h3{margin-bottom: 8px;}
+.bubble2Left p{font-size: 15px; line-height: 25px;}
+.bubble2Right{width: 45%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around; padding-left: 20px;}
 .whale{top: 300px; left: 400px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
 
 
