@@ -1,6 +1,6 @@
 $(function () {
   /*지메일 버튼*/
-  $('.gmail').click(function () {
+  $('.gmailBox').click(function () {
     $('.gmail').css('margin-left', '300px');
     $('.gmailBox').css('width', '400px');
     $('.gmailBox').css('transition', 'all 1s ease-in-out');
@@ -23,7 +23,7 @@ $(function () {
   });
 
   /*카카오 버튼*/
-  $('.kakao').click(function () {
+  $('.kakaoBox').click(function () {
     $('.kakao').css('margin-left', '300px');
     $('.kakaoBox').css('width', '400px');
     $('.kakaoBox').css('transition', 'all 1s ease-in-out');
@@ -46,7 +46,7 @@ $(function () {
   });
 
   /*네이버 버튼*/
-  $('.naver').click(function () {
+  $('.naverBox').click(function () {
     $('.naver').css('margin-left', '300px');
     $('.naverBox').css('width', '400px');
     $('.naverBox').css('transition', 'all 1s ease-in-out');
@@ -69,7 +69,7 @@ $(function () {
   });
 
   /*핸드폰 버튼*/
-  $('.phone').click(function () {
+  $('.phoneBox').click(function () {
     $('.phone').css('margin-left', '300px');
     $('.phoneBox').css('width', '400px');
     $('.phoneBox').css('transition', 'all 1s ease-in-out');

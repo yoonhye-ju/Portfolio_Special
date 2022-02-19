@@ -37,22 +37,25 @@ $(window).scroll(function () {
     $('.school').css("transform", "translateY(0px)").css("opacity", "1");
   }
   if (wb > 900) {
+    $('.school2').css("transform", "translateY(0px)").css("opacity", "1");
+  }
+  if (wb > 850) {
+    $('.bubble3').css("transform", "translateY(0px)").css("opacity", "1");
+  }
+  if (wb > 1100) {
     $('.prize').css("transform", "translateY(0px)").css("opacity", "1");
   }
-  if (wb > 1000) {
+  if (wb > 1400) {
     $('.whale').css("transform", "translateY(0px)").css("opacity", "0.5");
   }
   else {
     $('.whale').css("transform", "translateY(0px)").css("opacity", "0");
   }
-  if (wb > 1200) {
+  if (wb > 1800) {
     $('.stars').css("transform", "translateY(0px)").css("opacity", "0.8");
   }
   else {
     $('.stars').css("transform", "translateY(0px)").css("opacity", "0");
-  }
-    if (wb > 1200) {
-    $('.stars').css("transform", "translateY(0px)").css("opacity", "0.8");
   }
   if ( wb > 1845){
     $('.people').attr('src', 'img/header_people_line.png');

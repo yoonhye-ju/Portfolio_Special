@@ -93,8 +93,8 @@ to{width: 85%;}}
 
 #contact{width: calc(100% - 100px); height: 120px; margin-top: 15px; display: flex; flex-direction: row; align-items: center; position: relative;}
 
-.contactMe{cursor: pointer; margin: 0 auto; filter: drop-shadow(0px 0px 5px rgb(241, 149, 189, 0.8));}
-.contactMe:hover{animation-name: contact; animation-duration: 0.3s;}
+.fa-solid{font-size: 50px; cursor: pointer; margin: 0 auto; filter: drop-shadow(0px 0px 5px rgb(241, 149, 189, 0.8)); color: black;}
+.fa-solid:hover{animation-name: contact; animation-duration: 0.3s;}
 @keyframes contact{to{transform: scale(0.9);}
 from{transform: scale(1.0);}}
 
@@ -102,50 +102,82 @@ from{transform: scale(1.0);}}
 .contactMe_tootip::after{content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #ffffff transparent;}
 .play{cursor: pointer;}
 
-#scorllDownBox{width: calc(100% - 100px); height: auto; margin-top: 180px;}
+/*스크롤다운 애니메이션*/
+#scorllDownBox{width: calc(100% - 100px); height: auto; margin-top: 190px;}
 
 #scorllDownBox>p{font-size: 12px; text-align: center; font-weight: bold; color: #ffffff;}
 .scrollDown{width: 20px; height: 26px; border: 3px solid #ffffff; border-radius: 60px; position: relative; margin: 15px auto 0;}
+/*스크롤 휠*/
 .scrollDown::before{content: ''; width: 4px; height: 4px; position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background-color: #ffffff; border-radius: 50%; opacity: 1; animation: point 2s infinite; -webkit-animation: point 2s infinite;}
+/*스크롤 휠 애니메이션*/
 @keyframes point{to{opacity: 0; top: 15px;}}
 @-webkit-keyframes point{to{opacity: 0; top: 15px;}}
 
-#aboutMeBox{width: calc(100% - 100px); height: 937px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
-
-#aboutMeBox>.contentBox{position: relative;}
-.portfolio_text{transform: translateY(100px); transition: all 1s; opacity: 0;}
-.aboutMe_Left{width: 20%; height: 787px; float: left; padding: 50px 100px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+/*별*/
 .starlight{width: 100px; position: absolute; filter: drop-shadow(0px 0px 8px rgb(113, 175, 245)); transform: translateY(100px); transition: all 1s; opacity: 0; top: -130px; animation: starlight 2s ease-in-out infinite;}
 @keyframes starlight{0% {top: -130px;} 50% {top: -133px;} 100%{top: -130px;}}
 
-.star{position: absolute; top: 700px; left: -100px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+.star{position: absolute; top: 500px; left: -100px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
 
 .stars{width: 200px; top: -50px; right: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(238,174,202)); transform: translateY(300px); transition: all 1s; opacity: 0;}
 
 .starStar{width: 110px; bottom: 10px; left: 100px; position: absolute; filter: drop-shadow(0px 0px 10px rgba(148,187,233)); animation: starStar 2s ease-in-out infinite; transform: rotate(105deg);}
 @keyframes starStar{0% {top: 800px;} 50% {top: 797px;} 100%{top: 800px;}}
 
-.aboutMe_Right{width: 80%; height: 787px; position: absolute; right: 0; z-index: 3; padding: 50px;}
-.bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
-.bubble:after{content: ""; position: absolute; bottom: 66%; left: -3.7%; margin-left: 2px; border-width: 15px; border-style: solid; border-color: transparent #ffffff transparent transparent;}
 
+/*자기소개*/
+#aboutMeBox{width: calc(100% - 100px); height: 1200px; background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(208,179,212,1) 34%, rgba(171,184,225,1) 75%, rgba(148,187,233,1) 100%); float: right; position: relative;}
+#aboutMeBox>.contentBox{position: relative;}
+/*자기소개 타이틀 애니메이션*/
+.portfolio_text{transform: translateY(100px); transition: all 1s; opacity: 0;}
+/*자기소개 프로필 일러스트 박스*/
+.aboutMe_Left{width: 20%; height: 1200px; float: left; padding: 50px 100px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+
+
+/*자기소개 오른쪽 박스*/
+.aboutMe_Right{width: 80%; height: 1200px; position: absolute; right: 0; z-index: 3; padding: 50px;}
+/*업무*/
+.bubble{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; position: relative; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+/*업무 말풍선 꼭지*/
+.bubble:after{content: ""; position: absolute; bottom: 66%; left: -3.7%; margin-left: 2px; border-width: 15px; border-style: solid; border-color: transparent #ffffff transparent transparent;}
+/*업무 텍스트 박스*/
 .bubbleLeft{width: 55%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
-.bubbleLeft>h3{margin-bottom: 8px;}
-.bubbleLeft p{font-size: 15px; line-height: 25px;}
+.bubbleLeft>h3{margin-bottom: 15px;}
+.bubbleLeft p{font-size: 15px; margin-bottom: 8px;}
+/*업무 회사 이력*/
 .bubbleRight{width: 45%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around; padding-left: 20px;}
 .company1, .company2{transform: translateY(50px); transition: all 1s; opacity: 0; margin-bottom: 15px;}
-.school, .prize{transform: translateY(50px); transition: all 1s; opacity: 0; margin-bottom: 15px;}
+.school, .school2{transform: translateY(50px); transition: all 1s; opacity: 0; margin-bottom: 15px;}
 
 .company1, .company2 p{font-size: 13px;}
-.school, .prize p{font-size: 13px;}
+.school, .school2{font-size: 13px;}
 .during{font-weight: bold; margin-bottom: 5px;}
 
-.bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+/*학력*/
+.bubble2{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; transform: translateY(100px); transition: all 1s; margin-bottom: 30px; opacity: 0;}
+/*학력 텍스트 박스*/
 .bubble2Left{width: 55%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
-.bubble2Left>h3{margin-bottom: 8px;}
-.bubble2Left p{font-size: 15px; line-height: 25px;}
+.bubble2Left>h3{margin-bottom: 15px;}
+.bubble2Left p{font-size: 15px; margin-bottom: 8px;}
+/*학력 졸업 학교*/
 .bubble2Right{width: 45%; height: 100%; float: right; display: flex;flex-direction: column; justify-content: space-around; padding-left: 20px;}
-.whale{top: 300px; left: 400px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
+
+/*수상 이력*/
+.bubble3{width: 100%; height: 230px; background-color: #ffffff; border-radius: 20px; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); padding: 30px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+/*수상 이력 왼쪽*/
+.bubble3Left{width: 55%; height: 100%; float: left; padding-right: 50px; text-align: justify;}
+.bubble3Left>h3{margin-bottom: 15px;}
+.bubble3Left p{font-size: 15px; margin-bottom: 8px;}
+/*수상 이력 오른쪽*/
+.bubble3Right{width: 45%; height: 100%; float: right; padding-left: 20px;}
+.prize{transform: translateY(50px); transition: all 1s; opacity: 0;}
+.prize>img{margin: 0px 0px 10px -10px;}
+.prize_during{font-weight: bold; margin-bottom: 5px;}
+.prizeText{font-size: 17px;}
+.prize p{font-size: 15px;}
+
+/*고래*/
+.whale{top: 580px; left: 0px; position: absolute; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1)); transform: translateY(200px); transition: all 1s; opacity: 0;}
 
 
 /*포트폴리오 박스*/
@@ -160,7 +192,7 @@ from{transform: scale(1.0);}}
 .btn:hover:before, .btn:hover:after{width:100%; transition: 800ms ease all;}
 
 /*오른쪽 버튼*/
-.dotBox{width: 5%; height: 700px; float: right; display: flex; flex-flow: column; align-items: center; justify-content: center;}
+.dotBox{width: 10%; height: 700px; float: right; display: flex; flex-flow: column; align-items: center; justify-content: center;}
 .dot {cursor: pointer; width: 13px; height: 13px; margin: 0 5px; background-color: rgba(238,174,202,1); border-radius: 50%; display: inline-block; transition: background-color 0.5s ease; border: 2px solid white; margin: 5px;}
 .active, .dot:hover {background-color: rgba(148,187,233,1)}
 
@@ -191,9 +223,9 @@ from{transform: scale(1.0);}}
 .library{transition: all 8s linear; transform: translateY(0px); cursor: move;}
 .librarySub{transition: all 8s linear; transform: translateY(0px); display: none;}
 
-.library_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.library_right{width: 30%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
-.library_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
+.library_right h1{font-size: 60px; line-height: 70px; margin-bottom: 30px;}
 
 .pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
 .subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
@@ -207,7 +239,7 @@ from{transform: scale(1.0);}}
 
 .cocktail{transition: all 10s linear; transform: translateX(0px);}
 
-.cocktail_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.cocktail_right{width: 30%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
 .cocktail_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
 
@@ -238,7 +270,7 @@ from{transform: scale(1.0);}}
 .WWF_mobile{width: 85px; height: 150px; position:absolute; top: 404px; left: 148px; overflow: hidden; cursor: move;}
 .mobile{width: 18%; position: absolute; margin: 370px 0 0 130px;}
 
-.WWF_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.WWF_right{width: 30%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
 .WWF_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
 
@@ -269,7 +301,7 @@ from{transform: scale(1.0);}}
 .tenThousand_mobile{width: 85px; height: 150px; position:absolute; top: 404px; left: 148px; overflow: hidden; cursor: move;}
 .mobile{width: 18%; position: absolute; margin: 370px 0 0 130px;}
 
-.tenThousand_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.tenThousand_right{width: 30%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
 .tenThousand_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
 
@@ -284,9 +316,9 @@ from{transform: scale(1.0);}}
 
 .korea{transition: all 8s linear; transform: translateY(0px);}
 
-.korea_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.korea_right{width: 30%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
-.korea_right h1{font-size: 50px; line-height: 65px; margin-bottom: 30px;}
+.korea_right h1{font-size: 48px; line-height: 65px; margin-bottom: 27px;}
 
 .pc1{width: 100%; margin: 130px 0 0 50px; position: absolute;}
 .subPage{font-size: 12px; color: rgb(150, 150, 150); position: absolute; top: 600px; left: 370px; cursor: pointer;}
@@ -301,7 +333,7 @@ from{transform: scale(1.0);}}
 .perfume{transition: all 2.5s linear; transform: translateY(0px);}
 .perfumeSub{transition: all 8s linear; transform: translateY(0px);}
 
-.perfume_right{width: 40%; height: 100%; float: left; padding-top: 155px;}
+.perfume_right{width: 30%; height: 100%; float: left; padding-top: 155px;}
 .portfolioNumber{font-size: 10px; color: #666; display: inline-block; margin-bottom: 20px;}
 .perfume_right h1{ font-size: 60px; line-height: 70px; margin-bottom: 30px;}
 
@@ -327,7 +359,7 @@ from{transform: scale(1.0);}}
 /*카카오*/
 .kakaoBox{width: 65px; height: 65px; border-radius: 50px; background-color: #FFE812; text-align: center; padding-top: 13px; cursor: pointer; position: relative; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .kakao{position: absolute; right: 12px;}
-.kakao_ID{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px;}
+.kakao_ID{display: none; color: #3d1d1c; font-size: 14px; position: absolute; top: 21px; left: 20px; width: 200px; height: 30px;}
 
 /*네이버*/
 .naverBox{width: 65px; height: 65px; border-radius: 50px; background-color: #00C73C; text-align: center; padding-top: 18px; cursor: pointer; position: relative; transform: translateY(100px); transition: all 1s; opacity: 0;}
@@ -337,7 +369,10 @@ from{transform: scale(1.0);}}
 /*핸드폰*/
 .phoneBox{width: 65px; height: 65px; border-radius: 50px; background-color: #47C5FC; text-align: center; padding-top: 14px; cursor: pointer; position: relative; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .phone{position: absolute; right: 22px;}
-.phoneNumber{display: none; color: #fff; font-size: 14px; position: absolute; top: 20px; left: 20px; width: 100px;}
+.phoneNumber{display: none; color: #fff; font-size: 14px; position: absolute; top: 21px; left: 20px; width: 100px;}
 
 .starLight{width: 150px; position: absolute; transform: translateY(100px); transition: all 1s; right: 300px; animation: starLight 2s ease-in-out infinite; filter: drop-shadow(0px 0px 5px rgb(91, 165, 250, .5));}
 @keyframes starLight{0% {top: 100px;} 50% {top: 105px;} 100%{top: 100px}}
+
+.planetinfo{width: 120px; position: absolute; top: 440px; left: 190px; animation: rotate 30s linear infinite; filter: drop-shadow(0px 5px 10px rgba(238,174,202,1));}
+@keyframes rotate{from {transform: rotate(0deg)} to{transform: rotate(360deg)}}

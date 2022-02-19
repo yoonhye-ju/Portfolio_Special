@@ -1,8 +1,8 @@
 $(function(){
-  $('.contactMe').mouseover(function(){
+  $('.fa-solid').mouseenter(function(){
     $('.contactMe_tootip').fadeIn();
   });
-  $('.contactMe').mouseout(function(){
+  $('.fa-solid').mouseout(function(){
     $('.contactMe_tootip').fadeOut();
   });
 });

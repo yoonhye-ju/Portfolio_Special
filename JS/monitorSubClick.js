@@ -167,7 +167,7 @@ $('.korea_Monitor').mouseout(function(){
 
   //조말론
   $('.perfume_Monitor').mouseover(function () {
-    $('.perfume').css('transform', 'translateY(-468px)')
+    $('.perfume').css('transform', 'translateY(-466px)')
   });
   $('.perfume_Monitor').mouseout(function () {
     $('.perfume').css('transform', 'translateY(0px)')
